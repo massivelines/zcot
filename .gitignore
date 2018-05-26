@@ -1,3 +1,15 @@
+
+# Created by https://www.gitignore.io/api/node,adobe,windows,prepros,visualstudiocode
+
+### Adobe ###
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep
+
+### Node ###
 # Logs
 logs
 *.log
@@ -36,7 +48,7 @@ build/Release
 node_modules/
 jspm_packages/
 
-# TypeScript v1 declaration files
+# Typescript v1 declaration files
 typings/
 
 # Optional npm cache directory
@@ -57,5 +69,39 @@ typings/
 # dotenv environment variables file
 .env
 
-# next.js build output
-.next
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+# End of https://www.gitignore.io/api/node,adobe,windows,prepros,visualstudiocode
