@@ -12,7 +12,43 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="">
+  <div class="overlay">
+    <div class="nav-container">
+      <div class="nav-flex">
+        <div class="end-left"></div>
+        <div class="nav-flex-container">
+          <nav>
+            <ul>
+              <li>
+                <a href="#0">Home</a>
+              </li>
+              <li>
+                <a href="#0">About</a>
+              </li>
+              <li>
+                <a href="#0">Events</a>
+              </li>
+              <li>
+                <a href="#0">Membership</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="end-right">
+          <div class="menu-button">
+            <button id="menuCloseButton" class="menu-icon" type="button">
+              X
+            </button>
+            <div class="menu-text">
+              Close
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <header id="index-header">
       <div class="section-flex header-bg">
@@ -23,7 +59,7 @@
         <div class="header-left-line header-second-spacer"></div>
         <div class="end-right darken header-left-line">
           <div class="menu-button">
-            <button class="menu-icon" type="button">
+            <button id="menuOpenButton" class="menu-icon" type="button">
               <img src="./img/baseline-menu-24px.svg" alt="">
             </button>
             <div class="menu-text">
@@ -34,8 +70,9 @@
       </div>
     </header>
 
+    <!-- TODO: determin if want extra 30px padding on left and right -->
     <section id="index-about">
-      <hr class="section-hr">
+      <hr class="hr-section">
       <div class="section-flex">
         <div class="end-left border-right">
           <div class="end-left-text-holder">
@@ -106,7 +143,7 @@
     </section>
 
     <section id="index-events">
-      <hr class="section-hr">
+      <hr class="hr-section">
       <div class="section-flex">
         <div class="end-left border-right">
           <div class="end-left-text-holder">
@@ -159,7 +196,7 @@
     </section>
 
     <section id="index-membership">
-      <hr class="section-hr">
+      <hr class="hr-section">
       <div class="section-flex">
         <div class="end-left border-right">
           <div class="end-left-text-holder">
@@ -240,6 +277,38 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="section-flex">
+        <div class="end-left"></div>
+        <div class="content-holder">
+          <ul class="footer-flex">
+            <li class="footer-page-link">Home</li>
+            <li class="footer-page-link">About</li>
+            <li class="footer-page-link">Meetings</li>
+            <li class="footer-page-link">Officers</li>
+            <li class="footer-page-link">Committees</li>
+            <li class="footer-page-link">Events</li>
+            <li class="footer-page-link">Membership Info</li>
+            <li class="footer-page-link">Sponsors</li>
+            <li class="footer-page-link">Join Us</li>
+          </ul>
+        </div>
+        <div class="end-right"></div>
+      </div>
+      <div class="section-flex">
+        <div class="end-left"></div>
+        <div class="content-holder">
+          <hr class="footer-hr">
+          <ul class="footer-flex">
+            <li class="footer-bottom-link">Facebook</li>
+            <li class="footer-bottom-link">© Z Club of Texas - All Rights Reserved</li>
+            <li class="footer-bottom-link">zcotofficers@zcluboftexas.org</li>
+          </ul>
+        </div>
+        <div class="end-right"></div>
+      </div>
+    </footer>
 
   </div>
 
