@@ -4,20 +4,123 @@
 
 .index-about-box {
   width: 20%;
+  text-align: center;
+  color: $darkgray;
+
+  .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-about-stat {
+    width: 100%;
+    @include frank;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .index-about-title {
+    width: 100%;
+    @include frank;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .index-about-img {
+    width: 100%;
+    flex-grow: 1;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      fill: $darkgray;
+    }
+  }
 }
 
-.index-about-box .square-container {
+.index-about-box .square-box {
   width: 80%;
 }
 
 /* Index Event Section */
 .index-event-box {
   width: 33.33%;
+  height: auto;
 }
 
-.index-event-box .square-container {
-  width: 80%;
+.index-event-container {
+  padding: 0 30px;
+  margin: 15px 0;
+  width: 100%;
+  height: 100%;
 }
+
+.image-1 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../../img/event-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.image-2 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../../img/event-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.image-3 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../../img/event-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-container {
+  margin-top: -13%;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+  border-top: solid 2px $gray;
+  border-left: solid 2px $gray;
+  border-right: solid 2px $gray;
+  background-color: $white;
+  
+}
+
+.header {
+  font-size: 20px;
+  @include frank;
+  font-weight: 700;
+}
+.description{
+  font-size: 14;
+}
+.date{
+  float: left;
+  width: 50%;
+  font-size: 12;
+  font-style: italic;
+}
+.link{
+  float: left;
+  width: 50%;
+  text-align: right;
+  font-size: 12;
+  @include frank;
+}
+
 
 /* Index Membership Section */
 
@@ -26,5 +129,59 @@
 }
 
 .index-membership-box .square-container {
-  width: 80%;
+}
+
+.index-membership-box .square{
+  margin: 30px;
+}
+
+.index-membership-box .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  @include frank;
+  font-weight: 700;
+  color: $white;
+}
+
+.index-membership-text{
+
+}
+
+.index-membership-image-1{
+  background-image: url(../../img/cruises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-2{
+  background-image: url(../../img/car-shows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-3{
+  background-image: url(../../img/caravan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-4{
+  background-image: url(../../img/track.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-5{
+  background-image: url(../../img/charities.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-6{
+  background-image: url(../../img/discounts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }

@@ -1,5 +1,7 @@
 /* Overlay */
 
+// TODO: thinking fade in inside container then grow
+
 /* Menu */
 .overlay {
   position: fixed;
@@ -11,7 +13,7 @@
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-100%);
+  // transform: translateY(-100%);
   /* transition: transform 0.4s ease-in-out, visibility 0s 0.4s; */
   transition: opacity 0.4s ease-in-out, visibility 0s 0.4s,
     transform 0.4s ease-in-out;
@@ -20,7 +22,7 @@
 .overlay.open {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0%);
+  // transform: translateY(0%);
   /* transition: transform 0.4s ease-in-out; */
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }

@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6,
-.menu-text {
+.menu-button-holder {
   @include frank;
   font-weight: 700;
 }
@@ -46,7 +46,7 @@ footer {
 
 .container {
   min-height: 100vh;
-  margin: 20px 20px 0px 20px;
+  margin: 50px 50px 0px 50px;
 }
 
 /* Medium and up */
@@ -55,8 +55,4 @@ footer {
 
 /* Large and up */
 @media screen and (min-width: 1024em) {
-  section,
-  footer {
-    margin-top: 100px;
-  }
 }
