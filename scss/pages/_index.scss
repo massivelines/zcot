@@ -2,6 +2,19 @@
 
 /* Index About Section */
 
+.index-about-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: $gray;
+  
+  @include medium {
+    display: none;
+  }
+}
+
 .index-about-box {
   width: 50%;
   text-align: center;
@@ -9,15 +22,49 @@
   
   @include medium {
     width: 20%;
+  }
+  
+  &:nth-of-type(2n+1){
+    border-left: solid $gray 2px;
+    border-right: solid $gray 2px;
+    // background-color: skyblue;
 
+    @include medium {
+      border-left: none;
+      border-right: none;
+    }
   }
 
+  &:nth-of-type(2n){
+    border-right: solid $gray 2px;
+    // background-color: pink;
+
+    @include medium {
+      border-left: solid $gray 2px;
+    }
+  }
+  
+  &:last-child{
+    margin-top: -25px;
+    border-left: none;
+    border-right: none;
+    // background-color: lightgreen;
+    
+    @include medium {
+      margin-top: 0;
+
+    }
+  }
+
+
   .content {
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
 
-    
+    @include medium {
+      padding: 30px;
+    }
   }
 
   .stat {
@@ -25,7 +72,7 @@
     @include frank;
     font-size: 23px;
     font-weight: 700;
-    
+
     @include medium {
       font-size: 30px;
     }
@@ -57,7 +104,7 @@
 .index-event-box {
   width: 100%;
   height: auto;
-  
+
   @include medium {
     width: 33.33%;
     height: auto;
@@ -139,10 +186,9 @@
 
 .index-membership-box {
   width: 50%;
-  
+
   @include medium {
     width: 33.33%;
-    
   }
 }
 

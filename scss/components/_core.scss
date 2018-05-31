@@ -81,7 +81,7 @@ footer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   // TODO: might cause an issues, unsure
@@ -112,7 +112,7 @@ footer {
   &.border {
     padding-bottom: 10px;
     padding-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     border-bottom: solid $gray 2px;
 
     @include medium {
@@ -149,7 +149,7 @@ footer {
 }
 
 .section-link {
-  width: 75%;
+  width: 55%;
   margin: auto;
   
   @include medium {
@@ -158,13 +158,15 @@ footer {
   }
 
   &.border {
-    padding-top: 40px;
+    padding-top: 30px;
+    margin-top: 20px;
     margin-bottom: 0px;
     border-top: solid $gray 2px;
     text-align: center;
     
     @include medium {
       padding-top: 0;
+      margin-top: 0;
       margin-bottom: 0;
       border-left: solid $gray 2px;
       border-top: none;
