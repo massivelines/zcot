@@ -17,6 +17,22 @@
   /* transition: transform 0.4s ease-in-out, visibility 0s 0.4s; */
   transition: opacity 0.4s ease-in-out, visibility 0s 0.4s,
     transform 0.4s ease-in-out;
+
+  .left-section {
+    width: 13%;
+
+    @include medium {
+      width: 6.2%;
+    }
+  }
+
+  .right-section {
+    width: 13%;
+
+    @include medium {
+      width: 6.2%;
+    }
+  }
 }
 
 .overlay.open {
@@ -51,7 +67,11 @@ body.open {
 }
 
 .nav-flex-container {
-  width: 87.6%;
+  width: 100%;
+
+  @include medium {
+    width: 87.6%;
+  }
 }
 
 nav {
@@ -64,7 +84,11 @@ nav {
 }
 
 nav ul {
-  width: 50%;
+  width: 100%;
+
+  @include medium {
+    width: 50%;
+  }
 }
 
 .overlay ul {
@@ -77,10 +101,15 @@ nav ul {
   padding: 30px 0px;
 }
 
-.overlay a:link {
-  font-size: 60px;
+.overlay a:link,
+.overlay a:visited {
+  font-size: 30px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
   color: $white;
   text-decoration: none;
+
+  @include medium {
+    font-size: 60px;
+  }
 }

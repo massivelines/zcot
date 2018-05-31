@@ -3,50 +3,65 @@
 /* Index About Section */
 
 .index-about-box {
-  width: 20%;
+  width: 50%;
   text-align: center;
   color: $darkgray;
+  
+  @include medium {
+    width: 20%;
+
+  }
 
   .content {
     padding: 30px;
     display: flex;
     flex-direction: column;
+
+    
   }
 
-  .index-about-stat {
+  .stat {
     width: 100%;
     @include frank;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 700;
-  }
-
-  .index-about-title {
-    width: 100%;
-    @include frank;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .index-about-img {
-    width: 100%;
-    flex-grow: 1;
-
-    svg {
-      height: 100%;
-      width: 100%;
-      fill: $darkgray;
+    
+    @include medium {
+      font-size: 30px;
     }
   }
-}
 
-.index-about-box .square-box {
-  width: 80%;
+  .title {
+    width: 100%;
+    @include frank;
+    font-size: 15px;
+    font-weight: 600;
+
+    @include medium {
+      font-size: 20px;
+    }
+  }
+
+  .img {
+    width: 100%;
+    flex-grow: 1;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+    fill: $darkgray;
+  }
 }
 
 /* Index Event Section */
 .index-event-box {
-  width: 33.33%;
+  width: 100%;
   height: auto;
+  
+  @include medium {
+    width: 33.33%;
+    height: auto;
+  }
 }
 
 .index-event-container {
@@ -96,7 +111,6 @@
   border-left: solid 2px $gray;
   border-right: solid 2px $gray;
   background-color: $white;
-  
 }
 
 .header {
@@ -104,16 +118,16 @@
   @include frank;
   font-weight: 700;
 }
-.description{
+.description {
   font-size: 14;
 }
-.date{
+.date {
   float: left;
   width: 50%;
   font-size: 12;
   font-style: italic;
 }
-.link{
+.link {
   float: left;
   width: 50%;
   text-align: right;
@@ -121,21 +135,25 @@
   @include frank;
 }
 
-
 /* Index Membership Section */
 
 .index-membership-box {
-  width: 33.33%;
+  width: 50%;
+  
+  @include medium {
+    width: 33.33%;
+    
+  }
 }
 
 .index-membership-box .square-container {
 }
 
-.index-membership-box .square{
+.index-membership-box .square {
   margin: 30px;
 }
 
-.index-membership-box .content{
+.index-membership-box .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,41 +163,40 @@
   color: $white;
 }
 
-.index-membership-text{
-
+.index-membership-text {
 }
 
-.index-membership-image-1{
+.index-membership-image-1 {
   background-image: url(../../img/cruises.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.index-membership-image-2{
+.index-membership-image-2 {
   background-image: url(../../img/car-shows.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.index-membership-image-3{
+.index-membership-image-3 {
   background-image: url(../../img/caravan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.index-membership-image-4{
+.index-membership-image-4 {
   background-image: url(../../img/track.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.index-membership-image-5{
+.index-membership-image-5 {
   background-image: url(../../img/charities.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.index-membership-image-6{
+.index-membership-image-6 {
   background-image: url(../../img/discounts.jpg);
   background-repeat: no-repeat;
   background-size: cover;

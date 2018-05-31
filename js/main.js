@@ -13,4 +13,6 @@
   }
   
   menuButton.addEventListener('click', toggleOpen);
+  closeText.addEventListener('click', toggleOpen);
+  menuText.addEventListener('click', toggleOpen);
 })();

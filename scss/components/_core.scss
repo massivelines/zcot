@@ -46,13 +46,216 @@ footer {
 
 .container {
   min-height: 100vh;
-  margin: 50px 50px 0px 50px;
+  margin: 20px 20px 0px 20px;
+  
+  @include medium {
+    margin: 50px 50px 0px 50px;
+
+  }
 }
 
-/* Medium and up */
-@media screen and (min-width: 640em) {
+/* Section Flex */
+
+/* TODO: check hr styling, might be a box white middle */
+.hr-section {
+  height: 2px;
+  background-color: $gray;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+
+  @include medium {
+    margin-bottom: 15px;
+  }
 }
 
-/* Large and up */
-@media screen and (min-width: 1024em) {
+.hr-inside {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.core-section-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  // TODO: might cause an issues, unsure
+  .content-holder {
+    width: 100%;
+
+    @include medium {
+      flex: 1;
+    }
+  }
+
+  .border-right {
+    border-right: solid $gray 2px;
+  }
+
+  .border-left {
+    border-left: solid $gray 2px;
+  }
+}
+
+.section-header {
+  width: 100%;
+
+  @include medium {
+    width: 6.2%;
+  }
+
+  &.border {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-bottom: solid $gray 2px;
+
+    @include medium {
+      padding-bottom: 0;
+      padding-left: 0;
+      margin-bottom: 0;
+      border-right: solid $gray 2px;
+      border-bottom: none;
+    }
+  }
+
+  .text-holder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .text {
+    margin-top: 0px;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: $blue;
+
+    @include medium {
+      transform: rotate(-90deg);
+      transform-origin: right center;
+      position: absolute;
+      top: 0;
+      right: 50%;
+    }
+  }
+}
+
+.section-link {
+  width: 75%;
+  margin: auto;
+  
+  @include medium {
+    width: 6.2%;
+    margin: 0;
+  }
+
+  &.border {
+    padding-top: 40px;
+    margin-bottom: 0px;
+    border-top: solid $gray 2px;
+    text-align: center;
+    
+    @include medium {
+      padding-top: 0;
+      margin-bottom: 0;
+      border-left: solid $gray 2px;
+      border-top: none;
+      text-align: inherit;
+    }
+  }
+
+  .text-holder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .link-text {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-size: 11px;
+      font-family: "Libre Franklin", sans-serif;
+      font-weight: 600;
+      color: $blue;
+
+      @include medium {
+        transform: rotate(90deg);
+        transform-origin: right center;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+      }
+
+      a:link,
+      a:visited {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Square */
+
+.square-container {
+  margin: auto;
+  padding: 0 0;
+}
+
+.square {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    img {
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    img.horizontal {
+      width: 100%;
+    }
+
+    img.vertical {
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
+
+/* TODO: control border with nth child for media quires */
+.right-box-border {
+  border-right: solid 2px #b4b8bf;
 }
