@@ -9,7 +9,7 @@
   margin: 40px 0px;
   border: none;
   background-color: $gray;
-  
+
   @include medium {
     display: none;
   }
@@ -19,12 +19,12 @@
   width: 50%;
   text-align: center;
   color: $darkgray;
-  
+
   @include medium {
     width: 20%;
   }
-  
-  &:nth-of-type(2n+1){
+
+  &:nth-of-type(2n + 1) {
     border-left: solid $gray 2px;
     border-right: solid $gray 2px;
     // background-color: skyblue;
@@ -35,7 +35,7 @@
     }
   }
 
-  &:nth-of-type(2n){
+  &:nth-of-type(2n) {
     border-right: solid $gray 2px;
     // background-color: pink;
 
@@ -43,19 +43,17 @@
       border-left: solid $gray 2px;
     }
   }
-  
-  &:last-child{
+
+  &:last-child {
     margin-top: -25px;
     border-left: none;
     border-right: none;
     // background-color: lightgreen;
-    
+
     @include medium {
       margin-top: 0;
-
     }
   }
-
 
   .content {
     padding: 25px;
@@ -101,6 +99,20 @@
 }
 
 /* Index Event Section */
+
+.index-event-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: $gray;
+
+  @include medium {
+    display: none;
+  }
+}
+
 .index-event-box {
   width: 100%;
   height: auto;
@@ -108,14 +120,24 @@
   @include medium {
     width: 33.33%;
     height: auto;
+
+    &.border:nth-of-type(2n) {
+      border-left: solid $gray 2px;
+      border-right: solid $gray 2px;
+    }
   }
 }
 
 .index-event-container {
-  padding: 0 30px;
-  margin: 15px 0;
+  padding: 0 10px;
+  margin: 0 0px;
   width: 100%;
   height: 100%;
+
+  @include medium {
+    padding: 0 30px;
+    margin: 15px 0;
+  }
 }
 
 .image-1 {
@@ -170,13 +192,11 @@
 }
 .date {
   float: left;
-  width: 50%;
   font-size: 12;
   font-style: italic;
 }
 .link {
-  float: left;
-  width: 50%;
+  float: right;
   text-align: right;
   font-size: 12;
   @include frank;
@@ -184,19 +204,65 @@
 
 /* Index Membership Section */
 
-.index-membership-box {
-  width: 50%;
+.index-membership-hr.mobile {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 10px 0px;
+  border: none;
+  background-color: $gray;
 
   @include medium {
-    width: 33.33%;
+    display: none;
   }
 }
 
-.index-membership-box .square-container {
+.index-membership-hr.desktop {
+  display: none;
+
+  @include medium {
+    display: inherit;
+    width: 33%;
+
+    & hr {
+      width: 55%;
+      height: 2px;
+      margin: 10px auto;
+      border: none;
+      background-color: $gray;
+    }
+  }
+}
+
+.index-membership-box {
+  width: 50%;
+
+  // &.border:nth-of-type(2n) {
+  &.border:nth-child(3n+2) {
+    border-left: solid $gray 2px;
+  }
+
+  @include medium {
+    width: 33.33%;
+
+    &.border:nth-child(3n+2) {
+      border-left: none;
+    }
+
+    &.border:nth-of-type(2n) {
+      border-left: solid $gray 2px;
+      border-right: solid $gray 2px;
+      // background-color: skyblue;
+    }
+  }
 }
 
 .index-membership-box .square {
-  margin: 30px;
+  margin: 10px;
+
+  @include medium {
+    margin: 30px;
+  }
 }
 
 .index-membership-box .content {

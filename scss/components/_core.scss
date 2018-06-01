@@ -41,7 +41,11 @@ h6,
 
 section,
 footer {
-  margin-top: 100px;
+  margin-top: 50px;
+
+  @include medium {
+    margin-top: 100px;
+  }
 }
 
 .container {
@@ -159,7 +163,7 @@ footer {
 
   &.border {
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0px;
     border-top: solid $gray 2px;
     text-align: center;

@@ -37,7 +37,11 @@ h6,
 /* Basic Spacing */
 section,
 footer {
-  margin-top: 100px; }
+  margin-top: 50px; }
+  @media (min-width: 640px) {
+    section,
+    footer {
+      margin-top: 100px; } }
 
 .container {
   min-height: 100vh;
@@ -136,7 +140,7 @@ footer {
       margin: 0; } }
   .section-link.border {
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0px;
     border-top: solid #b4b8bf 2px;
     text-align: center; }
@@ -428,6 +432,9 @@ nav ul {
   height: 30px;
   display: inline-block;
   position: relative; }
+  @media (min-width: 640px) {
+    .hamburger-box {
+      width: 30px; } }
 
 .hamburger-inner {
   display: block;
@@ -582,23 +589,37 @@ footer li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  @media (min-width: 640px) {
+    .footer-flex {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
 
 footer .content-holder {
   padding: 0 30px; }
+  @media (min-width: 640px) {
+    footer .content-holder {
+      padding: 0 30px; } }
 
 .footer-page-link {
   margin-top: 10px;
-  width: 20%; }
+  width: 40%; }
+  @media (min-width: 640px) {
+    .footer-page-link {
+      width: 20%; } }
 
 .footer-bottom-link {
-  width: 33.33%;
+  width: 100%;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600; }
+  @media (min-width: 640px) {
+    .footer-bottom-link {
+      width: 33.33%; } }
 
 .footer-hr {
   margin: 20px 0;
@@ -625,11 +646,11 @@ footer .content-holder {
   @media (min-width: 640px) {
     .index-about-box {
       width: 20%; } }
-  .index-about-box:nth-of-type(2n+1) {
+  .index-about-box:nth-of-type(2n + 1) {
     border-left: solid #b4b8bf 2px;
     border-right: solid #b4b8bf 2px; }
     @media (min-width: 640px) {
-      .index-about-box:nth-of-type(2n+1) {
+      .index-about-box:nth-of-type(2n + 1) {
         border-left: none;
         border-right: none; } }
   .index-about-box:nth-of-type(2n) {
@@ -683,19 +704,37 @@ footer .content-holder {
     fill: #84888f; }
 
 /* Index Event Section */
+.index-event-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+  @media (min-width: 640px) {
+    .index-event-hr {
+      display: none; } }
+
 .index-event-box {
   width: 100%;
   height: auto; }
   @media (min-width: 640px) {
     .index-event-box {
       width: 33.33%;
-      height: auto; } }
+      height: auto; }
+      .index-event-box.border:nth-of-type(2n) {
+        border-left: solid #b4b8bf 2px;
+        border-right: solid #b4b8bf 2px; } }
 
 .index-event-container {
-  padding: 0 30px;
-  margin: 15px 0;
+  padding: 0 10px;
+  margin: 0 0px;
   width: 100%;
   height: 100%; }
+  @media (min-width: 640px) {
+    .index-event-container {
+      padding: 0 30px;
+      margin: 15px 0; } }
 
 .image-1 {
   content: "";
@@ -747,26 +786,58 @@ footer .content-holder {
 
 .date {
   float: left;
-  width: 50%;
   font-size: 12;
   font-style: italic; }
 
 .link {
-  float: left;
-  width: 50%;
+  float: right;
   text-align: right;
   font-size: 12;
   font-family: "Libre Franklin", sans-serif; }
 
 /* Index Membership Section */
+.index-membership-hr.mobile {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 10px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+  @media (min-width: 640px) {
+    .index-membership-hr.mobile {
+      display: none; } }
+
+.index-membership-hr.desktop {
+  display: none; }
+  @media (min-width: 640px) {
+    .index-membership-hr.desktop {
+      display: inherit;
+      width: 33%; }
+      .index-membership-hr.desktop hr {
+        width: 55%;
+        height: 2px;
+        margin: 10px auto;
+        border: none;
+        background-color: #b4b8bf; } }
+
 .index-membership-box {
   width: 50%; }
+  .index-membership-box.border:nth-child(3n+2) {
+    border-left: solid #b4b8bf 2px; }
   @media (min-width: 640px) {
     .index-membership-box {
-      width: 33.33%; } }
+      width: 33.33%; }
+      .index-membership-box.border:nth-child(3n+2) {
+        border-left: none; }
+      .index-membership-box.border:nth-of-type(2n) {
+        border-left: solid #b4b8bf 2px;
+        border-right: solid #b4b8bf 2px; } }
 
 .index-membership-box .square {
-  margin: 30px; }
+  margin: 10px; }
+  @media (min-width: 640px) {
+    .index-membership-box .square {
+      margin: 30px; } }
 
 .index-membership-box .content {
   display: -webkit-box;

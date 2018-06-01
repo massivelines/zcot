@@ -105,6 +105,7 @@
   display: inline-block;
   position: relative;
   @include medium {
+    width: 30px;
   }
 }
 
