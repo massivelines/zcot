@@ -245,11 +245,11 @@ section .core-section-flex {
   opacity: 0;
   visibility: hidden;
   /* transition: transform 0.4s ease-in-out, visibility 0s 0.4s; */
-  -webkit-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
   .overlay .left-section {
     width: 13%; }
     @media (min-width: 640px) {
@@ -810,7 +810,7 @@ footer .content-holder {
   display: block;
   width: 100%;
   padding-bottom: 75%;
-  background-image: url(../../img/event-1.jpg);
+  background-image: url(../img/event-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -820,7 +820,7 @@ footer .content-holder {
   display: block;
   width: 100%;
   padding-bottom: 75%;
-  background-image: url(../../img/event-2.jpg);
+  background-image: url(../img/event-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -830,7 +830,7 @@ footer .content-holder {
   display: block;
   width: 100%;
   padding-bottom: 75%;
-  background-image: url(../../img/event-3.jpg);
+  background-image: url(../img/event-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -924,37 +924,37 @@ footer .content-holder {
   color: #ffffff; }
 
 .index-membership-image-1 {
-  background-image: url(../../img/cruises.jpg);
+  background-image: url(../img/cruises.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .index-membership-image-2 {
-  background-image: url(../../img/car-shows.jpg);
+  background-image: url(../img/car-shows.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .index-membership-image-3 {
-  background-image: url(../../img/caravan.jpg);
+  background-image: url(../img/caravan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .index-membership-image-4 {
-  background-image: url(../../img/track.jpg);
+  background-image: url(../img/track.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .index-membership-image-5 {
-  background-image: url(../../img/charities.jpg);
+  background-image: url(../img/charities.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .index-membership-image-6 {
-  background-image: url(../../img/discounts.jpg);
+  background-image: url(../img/discounts.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
