@@ -91,6 +91,9 @@ footer {
   .core-section-flex .border-left {
     border-left: solid #b4b8bf 2px; }
 
+section .core-section-flex {
+  min-height: 300px; }
+
 .section-header {
   width: 100%; }
   @media (min-width: 640px) {
@@ -392,6 +395,72 @@ nav ul {
   width: 13%; }
   @media (min-width: 640px) {
     #index-header .menu-section {
+      width: 6.2%; } }
+
+/* Page Header */
+#page-header .header-bg {
+  height: 20vh;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+#page-header .darken {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+#page-header .left-section {
+  width: 8%; }
+  @media (min-width: 640px) {
+    #page-header .left-section {
+      width: 6.2%; } }
+
+#page-header .first-spacer {
+  width: 30%; }
+  @media (min-width: 640px) {
+    #page-header .first-spacer {
+      width: 17%; } }
+
+#page-header .second-spacer {
+  margin-left: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  @media (min-width: 640px) {
+    #page-header .second-spacer {
+      margin-left: 30px; } }
+
+#page-header .left-line {
+  border-left: solid #b4b8bf 1px; }
+
+#page-header .logo-holder {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#page-header .logo {
+  padding-top: 0%;
+  width: 50%; }
+  @media (min-width: 640px) {
+    #page-header .logo {
+      padding-top: 0%;
+      width: 50%; } }
+
+#page-header .page-title {
+  color: #ffffff;
+  font-size: 75px;
+  font-family: "Libre Franklin", sans-serif; }
+
+#page-header .menu-section {
+  width: 13%; }
+  @media (min-width: 640px) {
+    #page-header .menu-section {
       width: 6.2%; } }
 
 /* Menu */
@@ -890,6 +959,74 @@ footer .content-holder {
   background-size: cover;
   background-position: center center; }
 
+.spacing {
+  padding: 25px; }
+
 /* About Page */
+#about-meetings .meetings-text {
+  width: 33%; }
+
+#about-meetings .meetings-map {
+  width: 67%; }
+
+#about-meetings .map {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0; }
+
+#about-meetings .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+#about-officers ul {
+  margin: 0;
+  padding: 0; }
+  #about-officers ul .officer {
+    width: 25%;
+    text-align: center;
+    list-style: none; }
+  #about-officers ul .img {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center center; }
+  #about-officers ul .title {
+    padding-top: 25px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 22px; }
+  #about-officers ul .name {
+    padding-top: 5px; }
+
+#about-committees .core-section-flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
+
+#about-committees ul {
+  margin: 0;
+  padding: 0; }
+  #about-committees ul li {
+    margin: 0;
+    padding: 0;
+    height: 20px; }
+
+#about-committees .committee {
+  width: 25%;
+  list-style: none; }
+
+#about-committees .title {
+  display: inline-block;
+  float: left;
+  font-family: "Libre Franklin", sans-serif; }
+
+#about-committees .name {
+  display: inline-block;
+  margin-left: 10px; }
+
 /* Event Page */
 /* Membership Page */

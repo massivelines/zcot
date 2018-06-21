@@ -67,6 +67,81 @@
   }
 }
 
+/* Page Header */
+
+#page-header {
+  .header-bg {
+    height: 20vh;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .darken {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .left-section {
+    width: 8%;
+
+    @include medium {
+      width: 6.2%;
+    }
+  }
+
+  .first-spacer {
+    width: 30%;
+
+    @include medium {
+      width: 17%;
+    }
+  }
+  .second-spacer {
+    margin-left: 10px;
+    flex: 1;
+
+    @include medium {
+      margin-left: 30px;
+    }
+  }
+
+  .left-line {
+    border-left: solid $gray 1px;
+  }
+
+  .logo-holder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    padding-top: 0%;
+    width: 50%;
+
+    @include medium {
+      padding-top: 0%;
+      width: 50%;
+    }
+  }
+
+  .page-title {
+    color: $white;
+    font-size: 75px;
+    @include frank;
+  }
+
+  .menu-section {
+    width: 13%;
+
+    @include medium {
+      width: 6.2%;
+    }
+  }
+}
+
 /* Menu */
 .menu-position-container {
   position: relative;
