@@ -245,11 +245,11 @@ section .core-section-flex {
   opacity: 0;
   visibility: hidden;
   /* transition: transform 0.4s ease-in-out, visibility 0s 0.4s; */
-  -webkit-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, -webkit-transform 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
   .overlay .left-section {
     width: 13%; }
     @media (min-width: 640px) {
@@ -1029,4 +1029,207 @@ footer .content-holder {
   margin-left: 10px; }
 
 /* Event Page */
+.event-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+  @media (min-width: 640px) {
+    .event-hr {
+      display: none; } }
+
+.event-box {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 640px) {
+    .event-box {
+      width: 33.33%;
+      height: auto; }
+      .event-box.border:nth-of-type(2n) {
+        border-left: solid #b4b8bf 2px;
+        border-right: solid #b4b8bf 2px; } }
+
+.event-container {
+  padding: 0 10px;
+  margin: 0 0px;
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 640px) {
+    .event-container {
+      padding: 0 30px;
+      margin: 15px 0; } }
+
+.image-1 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.image-2 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.image-3 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.text-container {
+  margin-top: -13%;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+  border-top: solid 2px #b4b8bf;
+  border-left: solid 2px #b4b8bf;
+  border-right: solid 2px #b4b8bf;
+  background-color: #ffffff; }
+
+.header {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700; }
+
+.description {
+  font-size: 14; }
+
+.date {
+  float: left;
+  font-size: 12;
+  font-style: italic; }
+
+.link {
+  float: right;
+  text-align: right;
+  font-size: 12;
+  font-family: "Libre Franklin", sans-serif; }
+
 /* Membership Page */
+.membership-sponsor-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+  @media (min-width: 640px) {
+    .membership-sponsor-hr {
+      display: none; } }
+
+.membership-sponsor-box {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 640px) {
+    .membership-sponsor-box {
+      width: 25%;
+      height: auto; } }
+  .membership-sponsor-box .card-header {
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700; }
+  .membership-sponsor-box .text-container {
+    margin-top: -13%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    text-align: center;
+    border-top: solid 2px #b4b8bf;
+    border-left: solid 2px #b4b8bf;
+    border-right: solid 2px #b4b8bf;
+    background-color: #ffffff; }
+
+.membership-sponsor-container {
+  padding: 0 10px;
+  margin: 0 0px;
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 640px) {
+    .membership-sponsor-container {
+      padding: 0 30px;
+      margin: 15px 0; } }
+
+.sponsor-holder {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/sponsors/nissan_brand_logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.membership-form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.membership-contact-hr {
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+
+.membership-contact-type {
+  width: 100%; }
+
+.membership-contact-info {
+  width: 66%;
+  float: left; }
+
+.membership-contact-first-half {
+  width: 32%;
+  float: left; }
+
+.membership-contact-second-half {
+  width: 32%;
+  float: left; }
+
+.membership-car-details {
+  width: 32%; }
+
+.membership-additional {
+  width: 66%;
+  float: left; }
+
+.membership-interest {
+  width: 33%; }
+
+.membership-contact-header {
+  width: 100%; }
+
+.membership-input {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: #00539b solid 2px;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+
+.membership-type-radio {
+  float: left;
+  margin-right: 30px; }
