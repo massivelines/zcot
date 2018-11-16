@@ -6,11 +6,19 @@
 
 #about-meetings {
   .meetings-text {
-    width: 33%;
+    width: 100%;
+
+    @include medium {
+      width: 33%;
+    }
   }
 
   .meetings-map {
-    width: 67%;
+    width: 100%;
+
+    @include medium {
+      width: 67%;
+    }
   }
 
   .map {
@@ -34,9 +42,13 @@
   padding: 0;
 
   .officer {
-    width: 25%;
+    width: 50%;
     text-align: center;
     list-style: none;
+
+    @include medium {
+      width: 25%;
+    }
   }
 
   .img {
@@ -74,18 +86,35 @@
     }
   }
   .committee {
-    width: 25%;
+    // Todo setup padding should be 50%
+    width: 45%;
     list-style: none;
+    padding: 10px 0;
+
+    @include medium {
+      width: 50%;
+    }
   }
 
   .title {
     display: inline-block;
+    width: 100%;
     float: left;
     @include frank;
+
+    @include medium {
+      width: inherit;
+    }
   }
 
   .name {
     display: inline-block;
+    width: 100%;
     margin-left: 10px;
+    white-space: nowrap;
+
+    @include medium {
+      width: inherit;
+    }
   }
 }

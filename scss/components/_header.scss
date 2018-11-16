@@ -83,7 +83,7 @@
   }
 
   .left-section {
-    width: 8%;
+    width: 4%;
 
     @include medium {
       width: 6.2%;
@@ -91,7 +91,7 @@
   }
 
   .first-spacer {
-    width: 30%;
+    width: 15%;
 
     @include medium {
       width: 17%;
@@ -128,9 +128,16 @@
   }
 
   .page-title {
+    display: flex;
+    height: 100%;
+    align-items: center;
     color: $white;
-    font-size: 75px;
+    font-size: 40px;
     @include frank;
+
+    @include medium {
+      font-size: 75px;
+    }
   }
 
   .menu-section {
