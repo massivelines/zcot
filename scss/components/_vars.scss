@@ -39,8 +39,16 @@ $green: green;
 }
 
 // Media Queries
+$small-width: 425px;
 $medium-width: 768px;
 $large-width: 1024px;
+$xlarge-width: 1440px;
+
+@mixin small {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
 
 @mixin medium {
   @media (min-width: #{$medium-width}) {
@@ -50,6 +58,12 @@ $large-width: 1024px;
 
 @mixin large {
   @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: #{$xlarge-width}) {
     @content;
   }
 }

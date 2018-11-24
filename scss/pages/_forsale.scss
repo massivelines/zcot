@@ -1,0 +1,47 @@
+#for-sale-page {
+  .for-sale-item {
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+
+    .details {
+      width: 66.66%;
+      margin: 10px;
+    }
+
+    .photos {
+      width: 33.33%;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+
+      .photo-container {
+        width: 50%;
+      }
+      
+      .photo-holder {
+        padding: 10px;
+      }
+      
+      a {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+
+  .for-sale-hr {
+    width: 100%;
+    height: 2px;
+    margin: 10px 20px;
+    border: none;
+    background-color: $gray;
+  }
+}

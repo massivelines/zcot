@@ -1,120 +1,122 @@
-.spacing {
-  padding: 25px;
-}
-
 /* About Page */
-
-#about-meetings {
-  .meetings-text {
-    width: 100%;
-
-    @include medium {
-      width: 33%;
+#about-page{
+  .spacing {
+    padding: 25px;
+  }
+  
+  
+  #about-meetings {
+    .meetings-text {
+      width: 100%;
+  
+      @include medium {
+        width: 33%;
+      }
+    }
+  
+    .meetings-map {
+      width: 100%;
+  
+      @include medium {
+        width: 67%;
+      }
+    }
+  
+    .map {
+      overflow: hidden;
+      padding-bottom: 50%;
+      position: relative;
+      height: 0;
+    }
+  
+    .map iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
     }
   }
-
-  .meetings-map {
-    width: 100%;
-
-    @include medium {
-      width: 67%;
-    }
-  }
-
-  .map {
-    overflow: hidden;
-    padding-bottom: 50%;
-    position: relative;
-    height: 0;
-  }
-
-  .map iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-}
-
-#about-officers ul {
-  margin: 0;
-  padding: 0;
-
-  .officer {
-    width: 50%;
-    text-align: center;
-    list-style: none;
-
-    @include medium {
-      width: 25%;
-    }
-  }
-
-  .img {
-    background-image: url(../img/header.jpg);
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .title {
-    padding-top: 25px;
-    @include frank;
-    font-size: 22px;
-  }
-
-  .name {
-    padding-top: 5px;
-  }
-}
-
-#about-committees {
-  .core-section-flex {
-    justify-content: space-between;
-    align-content: flex-start;
-  }
-
-  ul {
+  
+  #about-officers ul {
     margin: 0;
     padding: 0;
-
-    li {
-      // display: block;
+  
+    .officer {
+      width: 50%;
+      text-align: center;
+      list-style: none;
+  
+      @include medium {
+        width: 25%;
+      }
+    }
+  
+    .img {
+      background-image: url(../img/header.jpg);
+      background-size: cover;
+      background-position: center center;
+    }
+  
+    .title {
+      padding-top: 25px;
+      @include frank;
+      font-size: 22px;
+    }
+  
+    .name {
+      padding-top: 5px;
+    }
+  }
+  
+  #about-committees {
+    .core-section-flex {
+      justify-content: space-between;
+      align-content: flex-start;
+    }
+  
+    ul {
       margin: 0;
       padding: 0;
-      height: 20px;
+  
+      li {
+        // display: block;
+        margin: 0;
+        padding: 0;
+        height: 20px;
+      }
     }
-  }
-  .committee {
-    // Todo setup padding should be 50%
-    width: 45%;
-    list-style: none;
-    padding: 10px 0;
-
-    @include medium {
-      width: 50%;
+    .committee {
+      // Todo setup padding should be 50%
+      width: 45%;
+      list-style: none;
+      padding: 10px 0;
+  
+      @include medium {
+        width: 50%;
+      }
     }
-  }
-
-  .title {
-    display: inline-block;
-    width: 100%;
-    float: left;
-    @include frank;
-
-    @include medium {
-      width: inherit;
+  
+    .title {
+      display: inline-block;
+      width: 100%;
+      float: left;
+      @include frank;
+  
+      @include medium {
+        width: inherit;
+      }
     }
-  }
-
-  .name {
-    display: inline-block;
-    width: 100%;
-    margin-left: 10px;
-    white-space: nowrap;
-
-    @include medium {
-      width: inherit;
+  
+    .name {
+      display: inline-block;
+      width: 100%;
+      margin-left: 10px;
+      white-space: nowrap;
+  
+      @include medium {
+        width: inherit;
+      }
     }
   }
 }

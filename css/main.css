@@ -703,362 +703,340 @@ footer .content-holder {
 
 /* Pages */
 /* Index Page */
-/* Index About Section */
-.index-about-hr {
-  margin: auto;
-  width: 55%;
-  height: 2px;
-  margin: 40px 0px;
-  border: none;
-  background-color: #b4b8bf; }
-  @media (min-width: 768px) {
-    .index-about-hr {
-      display: none; } }
-
-.index-about-box {
-  width: 50%;
-  text-align: center;
-  color: #84888f; }
-  @media (min-width: 768px) {
-    .index-about-box {
-      width: 20%; } }
-  .index-about-box:nth-of-type(2n + 1) {
-    border-left: solid #b4b8bf 2px;
-    border-right: solid #b4b8bf 2px; }
+#index-page {
+  /* Index About Section */
+  /* Index Event Section */
+  /* Index Membership Section */ }
+  #index-page .index-about-hr {
+    margin: auto;
+    width: 55%;
+    height: 2px;
+    margin: 40px 0px;
+    border: none;
+    background-color: #b4b8bf; }
     @media (min-width: 768px) {
-      .index-about-box:nth-of-type(2n + 1) {
-        border-left: none;
-        border-right: none; } }
-  .index-about-box:nth-of-type(2n) {
-    border-right: solid #b4b8bf 2px; }
+      #index-page .index-about-hr {
+        display: none; } }
+  #index-page .index-about-box {
+    width: 50%;
+    text-align: center;
+    color: #84888f; }
     @media (min-width: 768px) {
-      .index-about-box:nth-of-type(2n) {
-        border-left: solid #b4b8bf 2px; } }
-  .index-about-box:last-child {
-    margin-top: -25px;
-    border-left: none;
-    border-right: none; }
+      #index-page .index-about-box {
+        width: 20%; } }
+    #index-page .index-about-box:nth-of-type(2n + 1) {
+      border-left: solid #b4b8bf 2px;
+      border-right: solid #b4b8bf 2px; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box:nth-of-type(2n + 1) {
+          border-left: none;
+          border-right: none; } }
+    #index-page .index-about-box:nth-of-type(2n) {
+      border-right: solid #b4b8bf 2px; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box:nth-of-type(2n) {
+          border-left: solid #b4b8bf 2px; } }
+    #index-page .index-about-box:last-child {
+      margin-top: -25px;
+      border-left: none;
+      border-right: none; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box:last-child {
+          margin-top: 0; } }
+    #index-page .index-about-box .content {
+      padding: 25px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box .content {
+          padding: 30px; } }
+    #index-page .index-about-box .stat {
+      width: 100%;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 23px;
+      font-weight: 700; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box .stat {
+          font-size: 30px; } }
+    #index-page .index-about-box .title {
+      width: 100%;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 15px;
+      font-weight: 600; }
+      @media (min-width: 768px) {
+        #index-page .index-about-box .title {
+          font-size: 20px; } }
+    #index-page .index-about-box .img {
+      width: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+    #index-page .index-about-box svg {
+      height: 100%;
+      width: 100%;
+      fill: #84888f; }
+  #index-page .index-event-hr {
+    margin: auto;
+    width: 55%;
+    height: 2px;
+    margin: 40px 0px;
+    border: none;
+    background-color: #b4b8bf; }
     @media (min-width: 768px) {
-      .index-about-box:last-child {
-        margin-top: 0; } }
-  .index-about-box .content {
-    padding: 25px;
+      #index-page .index-event-hr {
+        display: none; } }
+  #index-page .index-event-box {
+    width: 100%;
+    height: auto; }
+    @media (min-width: 768px) {
+      #index-page .index-event-box {
+        width: 33.33%;
+        height: auto; }
+        #index-page .index-event-box.border:nth-of-type(2n) {
+          border-left: solid #b4b8bf 2px;
+          border-right: solid #b4b8bf 2px; } }
+  #index-page .index-event-container {
+    padding: 0 10px;
+    margin: 0 0px;
+    width: 100%;
+    height: 100%; }
+    @media (min-width: 768px) {
+      #index-page .index-event-container {
+        padding: 0 30px;
+        margin: 15px 0; } }
+  #index-page .image-1 {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../img/event-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .image-2 {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../img/event-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .image-3 {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../img/event-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .text-container {
+    margin-top: -13%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-top: solid 2px #b4b8bf;
+    border-left: solid 2px #b4b8bf;
+    border-right: solid 2px #b4b8bf;
+    background-color: #ffffff; }
+  #index-page .header {
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700; }
+  #index-page .description {
+    font-size: 14; }
+  #index-page .date {
+    float: left;
+    font-size: 12;
+    font-style: italic; }
+  #index-page .link {
+    float: right;
+    text-align: right;
+    font-size: 12;
+    font-family: "Libre Franklin", sans-serif; }
+  #index-page .index-membership-hr.mobile {
+    margin: auto;
+    width: 55%;
+    height: 2px;
+    margin: 10px 0px;
+    border: none;
+    background-color: #b4b8bf; }
+    @media (min-width: 768px) {
+      #index-page .index-membership-hr.mobile {
+        display: none; } }
+  #index-page .index-membership-hr.desktop {
+    display: none; }
+    @media (min-width: 768px) {
+      #index-page .index-membership-hr.desktop {
+        display: inherit;
+        width: 33%; }
+        #index-page .index-membership-hr.desktop hr {
+          width: 55%;
+          height: 2px;
+          margin: 10px auto;
+          border: none;
+          background-color: #b4b8bf; } }
+  #index-page .index-membership-box {
+    width: 50%; }
+    #index-page .index-membership-box.border:nth-child(3n+2) {
+      border-left: solid #b4b8bf 2px; }
+    @media (min-width: 768px) {
+      #index-page .index-membership-box {
+        width: 33.33%; }
+        #index-page .index-membership-box.border:nth-child(3n+2) {
+          border-left: none; }
+        #index-page .index-membership-box.border:nth-of-type(2n) {
+          border-left: solid #b4b8bf 2px;
+          border-right: solid #b4b8bf 2px; } }
+  #index-page .index-membership-box .square {
+    margin: 10px; }
+    @media (min-width: 768px) {
+      #index-page .index-membership-box .square {
+        margin: 30px; } }
+  #index-page .index-membership-box .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    @media (min-width: 768px) {
-      .index-about-box .content {
-        padding: 30px; } }
-  .index-about-box .stat {
-    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30px;
     font-family: "Libre Franklin", sans-serif;
-    font-size: 23px;
-    font-weight: 700; }
-    @media (min-width: 768px) {
-      .index-about-box .stat {
-        font-size: 30px; } }
-  .index-about-box .title {
-    width: 100%;
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 15px;
-    font-weight: 600; }
-    @media (min-width: 768px) {
-      .index-about-box .title {
-        font-size: 20px; } }
-  .index-about-box .img {
-    width: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
-  .index-about-box svg {
-    height: 100%;
-    width: 100%;
-    fill: #84888f; }
-
-/* Index Event Section */
-.index-event-hr {
-  margin: auto;
-  width: 55%;
-  height: 2px;
-  margin: 40px 0px;
-  border: none;
-  background-color: #b4b8bf; }
-  @media (min-width: 768px) {
-    .index-event-hr {
-      display: none; } }
-
-.index-event-box {
-  width: 100%;
-  height: auto; }
-  @media (min-width: 768px) {
-    .index-event-box {
-      width: 33.33%;
-      height: auto; }
-      .index-event-box.border:nth-of-type(2n) {
-        border-left: solid #b4b8bf 2px;
-        border-right: solid #b4b8bf 2px; } }
-
-.index-event-container {
-  padding: 0 10px;
-  margin: 0 0px;
-  width: 100%;
-  height: 100%; }
-  @media (min-width: 768px) {
-    .index-event-container {
-      padding: 0 30px;
-      margin: 15px 0; } }
-
-.image-1 {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 75%;
-  background-image: url(../img/event-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.image-2 {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 75%;
-  background-image: url(../img/event-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.image-3 {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 75%;
-  background-image: url(../img/event-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.text-container {
-  margin-top: -13%;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 20px;
-  border-top: solid 2px #b4b8bf;
-  border-left: solid 2px #b4b8bf;
-  border-right: solid 2px #b4b8bf;
-  background-color: #ffffff; }
-
-.header {
-  font-size: 20px;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 700; }
-
-.description {
-  font-size: 14; }
-
-.date {
-  float: left;
-  font-size: 12;
-  font-style: italic; }
-
-.link {
-  float: right;
-  text-align: right;
-  font-size: 12;
-  font-family: "Libre Franklin", sans-serif; }
-
-/* Index Membership Section */
-.index-membership-hr.mobile {
-  margin: auto;
-  width: 55%;
-  height: 2px;
-  margin: 10px 0px;
-  border: none;
-  background-color: #b4b8bf; }
-  @media (min-width: 768px) {
-    .index-membership-hr.mobile {
-      display: none; } }
-
-.index-membership-hr.desktop {
-  display: none; }
-  @media (min-width: 768px) {
-    .index-membership-hr.desktop {
-      display: inherit;
-      width: 33%; }
-      .index-membership-hr.desktop hr {
-        width: 55%;
-        height: 2px;
-        margin: 10px auto;
-        border: none;
-        background-color: #b4b8bf; } }
-
-.index-membership-box {
-  width: 50%; }
-  .index-membership-box.border:nth-child(3n+2) {
-    border-left: solid #b4b8bf 2px; }
-  @media (min-width: 768px) {
-    .index-membership-box {
-      width: 33.33%; }
-      .index-membership-box.border:nth-child(3n+2) {
-        border-left: none; }
-      .index-membership-box.border:nth-of-type(2n) {
-        border-left: solid #b4b8bf 2px;
-        border-right: solid #b4b8bf 2px; } }
-
-.index-membership-box .square {
-  margin: 10px; }
-  @media (min-width: 768px) {
-    .index-membership-box .square {
-      margin: 30px; } }
-
-.index-membership-box .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 30px;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 700;
-  color: #ffffff; }
-
-.index-membership-image-1 {
-  background-image: url(../img/cruises.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.index-membership-image-2 {
-  background-image: url(../img/car-shows.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.index-membership-image-3 {
-  background-image: url(../img/caravan.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.index-membership-image-4 {
-  background-image: url(../img/track.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.index-membership-image-5 {
-  background-image: url(../img/charities.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.index-membership-image-6 {
-  background-image: url(../img/discounts.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.spacing {
-  padding: 25px; }
+    font-weight: 700;
+    color: #ffffff; }
+  #index-page .index-membership-image-1 {
+    background-image: url(../img/cruises.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .index-membership-image-2 {
+    background-image: url(../img/car-shows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .index-membership-image-3 {
+    background-image: url(../img/caravan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .index-membership-image-4 {
+    background-image: url(../img/track.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .index-membership-image-5 {
+    background-image: url(../img/charities.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #index-page .index-membership-image-6 {
+    background-image: url(../img/discounts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
 
 /* About Page */
-#about-meetings .meetings-text {
+#about-page .spacing {
+  padding: 25px; }
+
+#about-page #about-meetings .meetings-text {
   width: 100%; }
   @media (min-width: 768px) {
-    #about-meetings .meetings-text {
+    #about-page #about-meetings .meetings-text {
       width: 33%; } }
 
-#about-meetings .meetings-map {
+#about-page #about-meetings .meetings-map {
   width: 100%; }
   @media (min-width: 768px) {
-    #about-meetings .meetings-map {
+    #about-page #about-meetings .meetings-map {
       width: 67%; } }
 
-#about-meetings .map {
+#about-page #about-meetings .map {
   overflow: hidden;
   padding-bottom: 50%;
   position: relative;
   height: 0; }
 
-#about-meetings .map iframe {
+#about-page #about-meetings .map iframe {
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
   position: absolute; }
 
-#about-officers ul {
+#about-page #about-officers ul {
   margin: 0;
   padding: 0; }
-  #about-officers ul .officer {
+  #about-page #about-officers ul .officer {
     width: 50%;
     text-align: center;
     list-style: none; }
     @media (min-width: 768px) {
-      #about-officers ul .officer {
+      #about-page #about-officers ul .officer {
         width: 25%; } }
-  #about-officers ul .img {
+  #about-page #about-officers ul .img {
     background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center center; }
-  #about-officers ul .title {
+  #about-page #about-officers ul .title {
     padding-top: 25px;
     font-family: "Libre Franklin", sans-serif;
     font-size: 22px; }
-  #about-officers ul .name {
+  #about-page #about-officers ul .name {
     padding-top: 5px; }
 
-#about-committees .core-section-flex {
+#about-page #about-committees .core-section-flex {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-line-pack: start;
   align-content: flex-start; }
 
-#about-committees ul {
+#about-page #about-committees ul {
   margin: 0;
   padding: 0; }
-  #about-committees ul li {
+  #about-page #about-committees ul li {
     margin: 0;
     padding: 0;
     height: 20px; }
 
-#about-committees .committee {
+#about-page #about-committees .committee {
   width: 45%;
   list-style: none;
   padding: 10px 0; }
   @media (min-width: 768px) {
-    #about-committees .committee {
+    #about-page #about-committees .committee {
       width: 50%; } }
 
-#about-committees .title {
+#about-page #about-committees .title {
   display: inline-block;
   width: 100%;
   float: left;
   font-family: "Libre Franklin", sans-serif; }
   @media (min-width: 768px) {
-    #about-committees .title {
+    #about-page #about-committees .title {
       width: inherit; } }
 
-#about-committees .name {
+#about-page #about-committees .name {
   display: inline-block;
   width: 100%;
   margin-left: 10px;
   white-space: nowrap; }
   @media (min-width: 768px) {
-    #about-committees .name {
+    #about-page #about-committees .name {
       width: inherit; } }
 
 /* Event Page */
-.event-hr {
+#events-page .event-hr {
   margin: auto;
   width: 55%;
   height: 2px;
@@ -1066,32 +1044,32 @@ footer .content-holder {
   border: none;
   background-color: #b4b8bf; }
   @media (min-width: 768px) {
-    .event-hr {
+    #events-page .event-hr {
       display: none; } }
 
-.event-box {
+#events-page .event-box {
   width: 100%;
   height: auto; }
   @media (min-width: 768px) {
-    .event-box {
+    #events-page .event-box {
       width: 33.33%;
       height: auto; }
-      .event-box.border:nth-of-type(2n) {
+      #events-page .event-box.border:nth-of-type(2n) {
         border-left: solid #b4b8bf 2px;
         border-right: solid #b4b8bf 2px; } }
 
-.event-container {
+#events-page .event-container {
   padding: 0 10px;
   margin: 0 0px;
   width: 100%;
   height: 100%; }
   @media (min-width: 768px) {
-    .event-container {
+    #events-page .event-container {
       padding: 0 30px;
       margin: 15px 0; } }
 
-.image-1 {
-  content: "";
+#events-page .image-1 {
+  content: '';
   display: block;
   width: 100%;
   padding-bottom: 75%;
@@ -1100,8 +1078,8 @@ footer .content-holder {
   background-size: cover;
   background-position: center center; }
 
-.image-2 {
-  content: "";
+#events-page .image-2 {
+  content: '';
   display: block;
   width: 100%;
   padding-bottom: 75%;
@@ -1110,8 +1088,8 @@ footer .content-holder {
   background-size: cover;
   background-position: center center; }
 
-.image-3 {
-  content: "";
+#events-page .image-3 {
+  content: '';
   display: block;
   width: 100%;
   padding-bottom: 75%;
@@ -1120,7 +1098,7 @@ footer .content-holder {
   background-size: cover;
   background-position: center center; }
 
-.text-container {
+#events-page .text-container {
   margin-top: -13%;
   margin-left: 15px;
   margin-right: 15px;
@@ -1130,80 +1108,27 @@ footer .content-holder {
   border-right: solid 2px #b4b8bf;
   background-color: #ffffff; }
 
-.header {
+#events-page .header {
   font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 700; }
 
-.description {
+#events-page .description {
   font-size: 14; }
 
-.date {
+#events-page .date {
   float: left;
   font-size: 12;
   font-style: italic; }
 
-.link {
+#events-page .link {
   float: right;
   text-align: right;
   font-size: 12;
   font-family: "Libre Franklin", sans-serif; }
 
 /* Membership Page */
-.membership-sponsor-hr {
-  margin: auto;
-  width: 55%;
-  height: 2px;
-  margin: 40px 0px;
-  border: none;
-  background-color: #b4b8bf; }
-  @media (min-width: 768px) {
-    .membership-sponsor-hr {
-      display: none; } }
-
-.membership-sponsor-box {
-  width: 100%;
-  height: auto; }
-  @media (min-width: 768px) {
-    .membership-sponsor-box {
-      width: 25%;
-      height: auto; } }
-  .membership-sponsor-box .card-header {
-    font-size: 20px;
-    font-family: "Libre Franklin", sans-serif;
-    font-weight: 700; }
-  .membership-sponsor-box .text-container {
-    margin-top: -13%;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 20px;
-    text-align: center;
-    border-top: solid 2px #b4b8bf;
-    border-left: solid 2px #b4b8bf;
-    border-right: solid 2px #b4b8bf;
-    background-color: #ffffff; }
-
-.membership-sponsor-container {
-  padding: 0 10px;
-  margin: 0 0px;
-  width: 100%;
-  height: 100%; }
-  @media (min-width: 768px) {
-    .membership-sponsor-container {
-      padding: 0 30px;
-      margin: 15px 0; } }
-
-.sponsor-holder {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 75%;
-  background-image: url(../img/sponsors/nissan_brand_logo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.membership-form {
+#membership-page .membership-form {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1215,7 +1140,7 @@ footer .content-holder {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.membership-contact-hr {
+#membership-page .membership-contact-hr {
   margin: auto;
   width: 100%;
   height: 2px;
@@ -1223,35 +1148,35 @@ footer .content-holder {
   border: none;
   background-color: #b4b8bf; }
 
-.membership-contact-type {
+#membership-page .membership-contact-type {
   width: 100%; }
 
-.membership-contact-info {
+#membership-page .membership-contact-info {
   width: 66%;
   float: left; }
 
-.membership-contact-first-half {
+#membership-page .membership-contact-first-half {
   width: 32%;
   float: left; }
 
-.membership-contact-second-half {
+#membership-page .membership-contact-second-half {
   width: 32%;
   float: left; }
 
-.membership-car-details {
+#membership-page .membership-car-details {
   width: 32%; }
 
-.membership-additional {
+#membership-page .membership-additional {
   width: 66%;
   float: left; }
 
-.membership-interest {
+#membership-page .membership-interest {
   width: 33%; }
 
-.membership-contact-header {
+#membership-page .membership-contact-header {
   width: 100%; }
 
-.membership-input {
+#membership-page .membership-input {
   width: 100%;
   padding-left: 10px;
   border-bottom: #00539b solid 2px;
@@ -1259,6 +1184,158 @@ footer .content-holder {
   border-right: none;
   border-top: none; }
 
-.membership-type-radio {
+#membership-page .membership-type-radio {
   float: left;
   margin-right: 30px; }
+
+/* Sponsors Page */
+#sponsors-page .rect-container {
+  margin: auto;
+  padding: 0 0; }
+
+#sponsors-page .rect {
+  position: relative; }
+  #sponsors-page .rect:after {
+    content: "";
+    display: block;
+    padding-bottom: 50%; }
+  #sponsors-page .rect .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #sponsors-page .rect .content div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      vertical-align: middle; }
+    #sponsors-page .rect .content img {
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle; }
+    #sponsors-page .rect .content img.horizontal {
+      width: 100%; }
+    #sponsors-page .rect .content img.vertical {
+      height: 100%;
+      margin: 0; }
+
+#sponsors-page .sponsor-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: #b4b8bf; }
+  @media (min-width: 768px) {
+    #sponsors-page .sponsor-hr {
+      display: none; } }
+
+#sponsors-page .sponsor-box {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 768px) {
+    #sponsors-page .sponsor-box {
+      width: 50%;
+      height: auto; } }
+  @media (min-width: 1024px) {
+    #sponsors-page .sponsor-box {
+      width: 40%;
+      height: auto; } }
+  @media (min-width: 1440px) {
+    #sponsors-page .sponsor-box {
+      width: 33.33%;
+      height: auto; } }
+  #sponsors-page .sponsor-box .card-header {
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700; }
+  #sponsors-page .sponsor-box .text-container {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-top: solid 2px #b4b8bf;
+    border-left: solid 2px #b4b8bf;
+    border-right: solid 2px #b4b8bf;
+    background-color: #ffffff; }
+
+#sponsors-page .sponsor-container {
+  margin: 0 0px;
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 768px) {
+    #sponsors-page .sponsor-container {
+      padding: 0 30px;
+      margin: 15px 0; } }
+
+#sponsors-page .sponsor-logo {
+  content: "";
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #sponsors-page .sponsor-logo.courtesy-logo {
+    background-image: url(../../img/sponsors/courtesy_nissan.jpeg); }
+  #sponsors-page .sponsor-logo.grubbs-logo {
+    background-image: url(../../img/sponsors/grubbs.jpg); }
+  #sponsors-page .sponsor-logo.wireworks-logo {
+    background-image: url(../../img/sponsors/wireworks.png); }
+  #sponsors-page .sponsor-logo.jotech-logo {
+    background-image: url(../../img/sponsors/jotech.png); }
+  #sponsors-page .sponsor-logo.zcardepot-logo {
+    background-image: url(../../img/sponsors/zcardepot.png); }
+
+#for-sale-page .for-sale-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px; }
+  #for-sale-page .for-sale-item .details {
+    width: 66.66%;
+    margin: 10px; }
+  #for-sale-page .for-sale-item .photos {
+    width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #for-sale-page .for-sale-item .photos .photo-container {
+      width: 50%; }
+    #for-sale-page .for-sale-item .photos .photo-holder {
+      padding: 10px; }
+    #for-sale-page .for-sale-item .photos a {
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 100%; }
+    #for-sale-page .for-sale-item .photos img {
+      width: auto;
+      height: 100%; }
+
+#for-sale-page .for-sale-hr {
+  width: 100%;
+  height: 2px;
+  margin: 10px 20px;
+  border: none;
+  background-color: #b4b8bf; }

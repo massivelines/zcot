@@ -1,0 +1,154 @@
+/* Sponsors Page */
+#sponsors-page{
+
+  .rect-container {
+    margin: auto;
+    padding: 0 0;
+  }
+  
+  .rect {
+    position: relative;
+  
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 50%;
+    }
+  
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+      }
+  
+      img {
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: middle;
+      }
+  
+      img.horizontal {
+        width: 100%;
+      }
+  
+      img.vertical {
+        height: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+
+  .sponsor-hr {
+    margin: auto;
+    width: 55%;
+    height: 2px;
+    margin: 40px 0px;
+    border: none;
+    background-color: $gray;
+  
+    @include medium {
+      display: none;
+    }
+  }
+  
+  .sponsor-box {
+    width: 100%;
+    height: auto;
+  
+    @include medium {
+      width: 50%;
+      height: auto;
+  
+      // &.border:nth-of-type(2n) {
+      //   border-left: solid $gray 2px;
+      //   border-right: solid $gray 2px;
+      // }
+    }
+
+    @include large {
+      width: 40%;
+      height: auto;
+    }
+    
+    @include xlarge {
+      width: 33.33%;
+      height: auto;
+    }
+
+
+    
+    .card-header {
+      font-size: 20px;
+      @include frank;
+      font-weight: 700;
+    }
+    
+    .text-container {
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 20px;
+      // text-align: center;
+      border-top: solid 2px $gray;
+      border-left: solid 2px $gray;
+      border-right: solid 2px $gray;
+      background-color: $white;
+    }
+  }
+  
+  .sponsor-container {
+    // padding: 0 10px;
+    margin: 0 0px;
+    width: 100%;
+    height: 100%;
+  
+    @include medium {
+      padding: 0 30px;
+      margin: 15px 0;
+    }
+  }
+  
+  
+  
+  .sponsor-logo {
+    content: "";
+    display: block;
+    width: 100%;
+    // padding-bottom: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  
+    &.courtesy-logo {
+      background-image: url(../../img/sponsors/courtesy_nissan.jpeg);
+    }
+    &.grubbs-logo {
+      background-image: url(../../img/sponsors/grubbs.jpg);
+    }
+    &.wireworks-logo {
+      background-image: url(../../img/sponsors/wireworks.png);
+    }
+    &.jotech-logo {
+      background-image: url(../../img/sponsors/jotech.png);
+    }
+    &.zcardepot-logo {
+      background-image: url(../../img/sponsors/zcardepot.png);
+    }
+  }
+
+}
+
