@@ -9,7 +9,7 @@
     .meetings-text {
       width: 100%;
   
-      @include medium {
+      @include tablet {
         width: 33%;
       }
     }
@@ -17,7 +17,7 @@
     .meetings-map {
       width: 100%;
   
-      @include medium {
+      @include tablet {
         width: 67%;
       }
     }
@@ -47,7 +47,7 @@
       text-align: center;
       list-style: none;
   
-      @include medium {
+      @include tablet {
         width: 25%;
       }
     }
@@ -92,7 +92,7 @@
       list-style: none;
       padding: 10px 0;
   
-      @include medium {
+      @include tablet {
         width: 50%;
       }
     }
@@ -103,7 +103,7 @@
       float: left;
       @include frank;
   
-      @include medium {
+      @include tablet {
         width: inherit;
       }
     }
@@ -114,7 +114,7 @@
       margin-left: 10px;
       white-space: nowrap;
   
-      @include medium {
+      @include tablet {
         width: inherit;
       }
     }

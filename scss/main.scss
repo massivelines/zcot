@@ -1,16 +1,15 @@
 /* Components */
-
 @import './components/vars';
+@import './components/reboot';
 @import './components/core';
 @import './components/overlay';
 @import './components/header';
 @import './components/footer';
 
 /* Pages */
-
 @import './pages/index';
 @import './pages/about';
 @import './pages/events';
 @import './pages/membership';
 @import './pages/sponsors';
-@import './pages/_forsale';
+@import './pages/forsale';

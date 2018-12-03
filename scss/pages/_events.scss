@@ -8,7 +8,7 @@
     border: none;
     background-color: $gray;
 
-    @include medium {
+    @include tablet {
       display: none;
     }
   }
@@ -17,7 +17,7 @@
     width: 100%;
     height: auto;
 
-    @include medium {
+    @include tablet {
       width: 33.33%;
       height: auto;
 
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
 
-    @include medium {
+    @include tablet {
       padding: 0 30px;
       margin: 15px 0;
     }

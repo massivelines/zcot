@@ -22,7 +22,7 @@ footer li {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @include medium {
+  @include tablet {
     justify-content: flex-start;
   }
 }
@@ -30,7 +30,7 @@ footer li {
 footer .content-holder {
   padding: 0 30px;
 
-  @include medium {
+  @include tablet {
     padding: 0 30px;
   }
 }
@@ -39,7 +39,7 @@ footer .content-holder {
   margin-top: 10px;
   width: 40%;
 
-  @include medium {
+  @include tablet {
     width: 20%;
   }
 }
@@ -49,7 +49,7 @@ footer .content-holder {
   @include frank;
   font-weight: 600;
 
-  @include medium {
+  @include tablet {
     width: 33.33%;
   }
 }

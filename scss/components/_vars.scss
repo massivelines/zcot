@@ -26,7 +26,7 @@ $green: green;
 // Typography
 @mixin main-body {
   font: {
-    family: "Libre Baskerville", serif;
+    family: 'Libre Baskerville', serif;
     size: 16;
     weight: 400;
   }
@@ -34,36 +34,36 @@ $green: green;
 
 @mixin frank {
   font: {
-    family: "Libre Franklin", sans-serif;
+    family: 'Libre Franklin', sans-serif;
   }
 }
 
 // Media Queries
-$small-width: 425px;
-$medium-width: 768px;
-$large-width: 1024px;
-$xlarge-width: 1440px;
+$phone-xlarge-width: 425px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-xlarge-width: 1440px;
 
-@mixin small {
-  @media (min-width: #{$small-width}) {
+@mixin phoneLarge {
+  @media (min-width: #{$phone-xlarge-width}) {
     @content;
   }
 }
 
-@mixin medium {
-  @media (min-width: #{$medium-width}) {
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
 
-@mixin large {
-  @media (min-width: #{$large-width}) {
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }
 
 @mixin xlarge {
-  @media (min-width: #{$xlarge-width}) {
+  @media (min-width: #{$desktop-xlarge-width}) {
     @content;
   }
 }

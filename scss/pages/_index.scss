@@ -9,7 +9,7 @@
     border: none;
     background-color: $gray;
   
-    @include medium {
+    @include tablet {
       display: none;
     }
   }
@@ -19,7 +19,7 @@
     text-align: center;
     color: $darkgray;
   
-    @include medium {
+    @include tablet {
       width: 20%;
     }
   
@@ -28,7 +28,7 @@
       border-right: solid $gray 2px;
       // background-color: skyblue;
   
-      @include medium {
+      @include tablet {
         border-left: none;
         border-right: none;
       }
@@ -38,7 +38,7 @@
       border-right: solid $gray 2px;
       // background-color: pink;
   
-      @include medium {
+      @include tablet {
         border-left: solid $gray 2px;
       }
     }
@@ -49,7 +49,7 @@
       border-right: none;
       // background-color: lightgreen;
   
-      @include medium {
+      @include tablet {
         margin-top: 0;
       }
     }
@@ -59,7 +59,7 @@
       display: flex;
       flex-direction: column;
   
-      @include medium {
+      @include tablet {
         padding: 30px;
       }
     }
@@ -70,7 +70,7 @@
       font-size: 23px;
       font-weight: 700;
   
-      @include medium {
+      @include tablet {
         font-size: 30px;
       }
     }
@@ -81,7 +81,7 @@
       font-size: 15px;
       font-weight: 600;
   
-      @include medium {
+      @include tablet {
         font-size: 20px;
       }
     }
@@ -107,7 +107,7 @@
     border: none;
     background-color: $gray;
   
-    @include medium {
+    @include tablet {
       display: none;
     }
   }
@@ -116,7 +116,7 @@
     width: 100%;
     height: auto;
   
-    @include medium {
+    @include tablet {
       width: 33.33%;
       height: auto;
   
@@ -133,7 +133,7 @@
     width: 100%;
     height: 100%;
   
-    @include medium {
+    @include tablet {
       padding: 0 30px;
       margin: 15px 0;
     }
@@ -211,7 +211,7 @@
     border: none;
     background-color: $gray;
   
-    @include medium {
+    @include tablet {
       display: none;
     }
   }
@@ -219,7 +219,7 @@
   .index-membership-hr.desktop {
     display: none;
   
-    @include medium {
+    @include tablet {
       display: inherit;
       width: 33%;
   
@@ -241,7 +241,7 @@
       border-left: solid $gray 2px;
     }
   
-    @include medium {
+    @include tablet {
       width: 33.33%;
   
       &.border:nth-child(3n+2) {
@@ -259,7 +259,7 @@
   .index-membership-box .square {
     margin: 10px;
   
-    @include medium {
+    @include tablet {
       margin: 30px;
     }
   }
@@ -275,6 +275,7 @@
   }
   
   .index-membership-text {
+    color: $blue;
   }
   
   .index-membership-image-1 {
