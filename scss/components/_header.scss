@@ -1,11 +1,86 @@
 /* Header */
 
+// .previous-header-bg,.header-bg {
+//   height: 100%;
+//   width: 100%;
+//   // background-color: white;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: cover;
+//   // position: absolute;
+// }
+
+
+.previous-header-bg {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  opacity: 1;
+  // transition: opacity 2s;
+  z-index: -5;
+}
+.header-bg {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 2s;
+  background-color: lightgreen;
+
+  &.fadeIn{
+    opacity: 1;
+  }
+}
+
+.bgImage1{
+  background-image: url('../../img/header/1.jpg');
+}
+.bgImage2{
+  background-image: url('../../img/header/2.jpg');
+}
+.bgImage3{
+  background-image: url('../../img/header/3.jpg');
+}
+.bgImage4{
+  background-image: url('../../img/header/4.jpg');
+}
+
+// #previousHeaderBg{
+//   background-color: lightblue;
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   z-index: -5;
+//   transition: opacity 2s;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
+// #headerBg{
+//   background-color: lightcoral;
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   z-index: -3;
+//   transition: opacity 2s;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
+
 #index-header {
-  .header-bg {
+  .header {
     height: 110vh;
-    background-image: url(../img/header.jpg);
-    background-size: cover;
-    background-position: center center;
+    // background-image: url(../img/header/1.jpg);
+    // background-size: cover;
+    // background-position: center center;
+    // transition: opacity 3s;
+    position: relative;
   }
 
   .darken {
@@ -70,9 +145,10 @@
 /* Page Header */
 
 #page-header {
+  // todo change to just .header
   .header-bg {
     height: 20vh;
-    background-image: url(../img/header.jpg);
+    // background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center center;
   }
