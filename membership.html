@@ -205,7 +205,39 @@
             <div class="spacing">
               <h3>We offer three ways to join PayPal, Mail in, Bring to a meeting</h3>
 
-              <form class="membership-form">
+              <script type="text/javascript">var submitted=false;</script>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='THE REDIRECT LINK HERE';}"></iframe>
+
+              <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSfS3YK41JgvgEd6jI21BCq2qMViYbaWDT5EjufYcaJw5fRr9A/formResponse" method="post" target="hidden_iframe" 
+              onsubmit="submitted=true;"> 
+
+                <p>Memberhsip Type *</p>
+                <div>
+                  <input type="radio" id="huey" name="entry.1214520531" value="Self $36"
+                         checked>
+                  <label for="huey">Self $36</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="dewey" name="entry.1214520531" value="Family $41">
+                  <label for="dewey">Family $41</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="louie" name="entry.1214520531" value="Associate $25 (non-Z-Car owner)">
+                  <label for="louie">Associate $25 (non-Z-Car owner)</label>
+                </div>
+                
+                <label>Name</label>
+                <input name="entry.1273310597" type="text" />
+                
+                <label>Email</label>
+                <input name="entry.1339776333" type="email" required />
+
+                <button type="submit" value="Send">Submit</button>
+              </form>
+
+              <!-- <form class="membership-form">
                 <div class="membership-contact-type">
                   <div class="membership-contact-header">Membership Type</div>
                   <div class="membership-type-radio">
@@ -223,7 +255,7 @@
                 </div>
                 <hr class="membership-contact-hr">
                 <!-- TODO: wrap in div to set headers level -->
-                <div class="membership-contact-header">Contact Info</div>
+                <!-- <div class="membership-contact-header">Contact Info</div>
                 <div class="membership-contact-first-half">
                   <input class="membership-input" type="text" id="name" value="Name" />
                   <input class="membership-input" type="text" id="address" value="Address" />
@@ -282,7 +314,7 @@
                   <input type="submit" value="PayPal">
                   <input type="button" value="Download Form">
                 </div>
-              </form>
+              </form> -->
 
             </div>
 
