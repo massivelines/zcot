@@ -1,0 +1,55 @@
+/* Variable, Mixin, and Helpers */
+
+// Based on a 12 grid with 30px gutter and
+// 50px margin on top, left, and right
+// Left and right = 6.2%
+// box with no gutter = 8.76%
+// .625rem
+// .9375rem
+// 3.125rem
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$lightgray: #e6eaf2;
+$gray: #b4b8bf;
+$darkgray: #84888f;
+$lightblue: #4e7fcc;
+$blue: #00539b;
+$darkblue: #002b6c;
+
+// testing colors
+$green: green;
+
+// TODO: reduce font weight for speed
+
+// Typography
+@mixin main-body {
+  font: {
+    family: "Libre Baskerville", serif;
+    size: 16;
+    weight: 400;
+  }
+}
+
+@mixin frank {
+  font: {
+    family: "Libre Franklin", sans-serif;
+  }
+}
+
+// Media Queries
+$medium-width: 640px;
+$large-width: 1024px;
+
+@mixin medium {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}

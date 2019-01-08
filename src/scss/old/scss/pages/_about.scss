@@ -1,0 +1,91 @@
+.spacing {
+  padding: 25px;
+}
+
+/* About Page */
+
+#about-meetings {
+  .meetings-text {
+    width: 33%;
+  }
+
+  .meetings-map {
+    width: 67%;
+  }
+
+  .map {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+  }
+
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+#about-officers ul {
+  margin: 0;
+  padding: 0;
+
+  .officer {
+    width: 25%;
+    text-align: center;
+    list-style: none;
+  }
+
+  .img {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .title {
+    padding-top: 25px;
+    @include frank;
+    font-size: 22px;
+  }
+
+  .name {
+    padding-top: 5px;
+  }
+}
+
+#about-committees {
+  .core-section-flex {
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      // display: block;
+      margin: 0;
+      padding: 0;
+      height: 20px;
+    }
+  }
+  .committee {
+    width: 25%;
+    list-style: none;
+  }
+
+  .title {
+    display: inline-block;
+    float: left;
+    @include frank;
+  }
+
+  .name {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}

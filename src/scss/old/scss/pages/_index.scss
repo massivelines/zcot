@@ -1,0 +1,316 @@
+/* Index Page */
+
+/* Index About Section */
+
+.index-about-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: $gray;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.index-about-box {
+  width: 50%;
+  text-align: center;
+  color: $darkgray;
+
+  @include medium {
+    width: 20%;
+  }
+
+  &:nth-of-type(2n + 1) {
+    border-left: solid $gray 2px;
+    border-right: solid $gray 2px;
+    // background-color: skyblue;
+
+    @include medium {
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  &:nth-of-type(2n) {
+    border-right: solid $gray 2px;
+    // background-color: pink;
+
+    @include medium {
+      border-left: solid $gray 2px;
+    }
+  }
+
+  &:last-child {
+    margin-top: -25px;
+    border-left: none;
+    border-right: none;
+    // background-color: lightgreen;
+
+    @include medium {
+      margin-top: 0;
+    }
+  }
+
+  .content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+
+    @include medium {
+      padding: 30px;
+    }
+  }
+
+  .stat {
+    width: 100%;
+    @include frank;
+    font-size: 23px;
+    font-weight: 700;
+
+    @include medium {
+      font-size: 30px;
+    }
+  }
+
+  .title {
+    width: 100%;
+    @include frank;
+    font-size: 15px;
+    font-weight: 600;
+
+    @include medium {
+      font-size: 20px;
+    }
+  }
+
+  .img {
+    width: 100%;
+    flex-grow: 1;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+    fill: $darkgray;
+  }
+}
+
+/* Index Event Section */
+
+.index-event-hr {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 40px 0px;
+  border: none;
+  background-color: $gray;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.index-event-box {
+  width: 100%;
+  height: auto;
+
+  @include medium {
+    width: 33.33%;
+    height: auto;
+
+    &.border:nth-of-type(2n) {
+      border-left: solid $gray 2px;
+      border-right: solid $gray 2px;
+    }
+  }
+}
+
+.index-event-container {
+  padding: 0 10px;
+  margin: 0 0px;
+  width: 100%;
+  height: 100%;
+
+  @include medium {
+    padding: 0 30px;
+    margin: 15px 0;
+  }
+}
+
+.image-1 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.image-2 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.image-3 {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(../img/event-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-container {
+  margin-top: -13%;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+  border-top: solid 2px $gray;
+  border-left: solid 2px $gray;
+  border-right: solid 2px $gray;
+  background-color: $white;
+}
+
+.header {
+  font-size: 20px;
+  @include frank;
+  font-weight: 700;
+}
+.description {
+  font-size: 14;
+}
+.date {
+  float: left;
+  font-size: 12;
+  font-style: italic;
+}
+.link {
+  float: right;
+  text-align: right;
+  font-size: 12;
+  @include frank;
+}
+
+/* Index Membership Section */
+
+.index-membership-hr.mobile {
+  margin: auto;
+  width: 55%;
+  height: 2px;
+  margin: 10px 0px;
+  border: none;
+  background-color: $gray;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.index-membership-hr.desktop {
+  display: none;
+
+  @include medium {
+    display: inherit;
+    width: 33%;
+
+    & hr {
+      width: 55%;
+      height: 2px;
+      margin: 10px auto;
+      border: none;
+      background-color: $gray;
+    }
+  }
+}
+
+.index-membership-box {
+  width: 50%;
+
+  // &.border:nth-of-type(2n) {
+  &.border:nth-child(3n+2) {
+    border-left: solid $gray 2px;
+  }
+
+  @include medium {
+    width: 33.33%;
+
+    &.border:nth-child(3n+2) {
+      border-left: none;
+    }
+
+    &.border:nth-of-type(2n) {
+      border-left: solid $gray 2px;
+      border-right: solid $gray 2px;
+      // background-color: skyblue;
+    }
+  }
+}
+
+.index-membership-box .square {
+  margin: 10px;
+
+  @include medium {
+    margin: 30px;
+  }
+}
+
+.index-membership-box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  @include frank;
+  font-weight: 700;
+  color: $white;
+}
+
+.index-membership-text {
+}
+
+.index-membership-image-1 {
+  background-image: url(../img/cruises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-2 {
+  background-image: url(../img/car-shows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-3 {
+  background-image: url(../img/caravan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-4 {
+  background-image: url(../img/track.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-5 {
+  background-image: url(../img/charities.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-membership-image-6 {
+  background-image: url(../img/discounts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

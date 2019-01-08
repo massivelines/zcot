@@ -1,0 +1,85 @@
+.index-header {
+  height: 110vh;
+  // background-color: lightblue;
+  display: flex;
+  position: relative;
+
+  .darken {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .left-section {
+    width: 6.2%;
+  }
+
+  .first-spacer {
+    width: 17%;
+  }
+  .second-spacer {
+    margin-left: 10px;
+    flex: 1;
+  }
+
+  .left-line {
+    border-left: solid black 1px;
+  }
+
+  .logo-holder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    padding-top: 200%;
+    width: 85%;
+  }
+
+  .menu-section {
+    width: 6.2%;
+  }
+
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: lightgreen;
+    z-index: -2;
+  }
+
+  .new-background-image {
+    background-size: cover;
+    transition: 3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: lightpink;
+    z-index: -1;
+  }
+
+  .grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.overlay {
+  overflow: hidden;
+  position: fixed;
+  // position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
+  top: 0;
+  left: 0;
+  // overflow-y: scroll;
+}

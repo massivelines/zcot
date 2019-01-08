@@ -1,15 +1,3 @@
-
-# Created by https://www.gitignore.io/api/node,adobe,windows,prepros,visualstudiocode
-
-### Adobe ###
-# Adobe Source Files
-*.psd
-*.ai
-*.indd
-*.prproj
-*.aep
-
-### Node ###
 # Logs
 logs
 *.log
@@ -41,7 +29,7 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
@@ -63,45 +51,19 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
 # dotenv environment variables file
 .env
 
-### Prepros ###
-# Config Prepros files to ignore
-prepros.cfg
-prepros-6.config
+# gatsby files
+.cache/
+public
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history
+# Mac files
+.DS_Store
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-
-# End of https://www.gitignore.io/api/node,adobe,windows,prepros,visualstudiocode
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
