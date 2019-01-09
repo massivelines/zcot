@@ -1,12 +1,14 @@
-@mixin hover {
-  &:hover {
-    @content;
+@mixin screenSize($size) {
+  // Check if breakpoint exists, else oput warning
+  @if map-has-key($breakpoints, $size) {
+    // get with of breakpoint
+    $width: map-get($breakpoints, $size);
+    // write media query
+    @media (min-width: $width) {
+      @content;
+    }
   }
-}
-
-@mixin hover-focus {
-  &:hover,
-  &:focus {
-    @content;
+  else {
+    @warn 'Invalid breakpoint: #{$size}.';
   }
 }

@@ -1,0 +1,60 @@
+.overlay {
+  // overflow: hidden;
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: $blue;
+  top: 0;
+  left: 0;
+  // opacity: 0.5;
+  padding: $layout-spacing;
+  // todo check scroll lock for account for scroll bar
+  overflow-y: scroll;
+  z-index: 1;
+
+  nav {
+    font-family: $franklin;
+    font-weight: 600;
+    font-size: 3.75rem;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      color: $white;
+      text-align: center;
+    }
+
+    li {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a:link,
+    a:visited {
+      color: $white;
+      text-decoration: none;
+    }
+
+    li:not(:first-child) {
+      border-top: solid 2px $white;
+    }
+  }
+
+  .spacer {
+    width: $section-width-lg;
+  }
+}

@@ -1,13 +1,19 @@
 // Each component has its own sass file
+@import './vendor/_reboot';
 @import './_vars';
 @import './_mixins';
-@import './_reboot';
 
 @import './pages/index';
 
 @import '../components/Layout/Layout';
 @import '../components/Layout/IndexHeader/IndexHeader';
+@import '../components/Layout/IndexHeader/Overlay';
 @import '../components/Layout/Footer/Footer';
 
 @import '../components/SectionContainer/SectionContainer';
 @import '../components/Square/Square';
+
+// font-family: 'Libre Franklin', sans-serif;
+body {
+  font-family: $Baskerville;
+}

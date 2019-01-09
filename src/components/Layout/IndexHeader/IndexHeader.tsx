@@ -5,12 +5,12 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Overlay from './Overlay';
 
-import './IndexHeader.scss';
+import bgImage1 from '../../../images/headerBg/1.jpg';
+import bgImage2 from '../../../images/headerBg/2.jpg';
+import bgImage3 from '../../../images/headerBg/3.jpg';
+import bgImage4 from '../../../images/headerBg/4.jpg';
 
-import bgImage1 from '../../../images/header/1.jpg';
-import bgImage2 from '../../../images/header/2.jpg';
-import bgImage3 from '../../../images/header/3.jpg';
-import bgImage4 from '../../../images/header/4.jpg';
+import logo from '../../../images/z-logo-flat.svg';
 
 const bgImageArr = [bgImage1, bgImage2, bgImage3, bgImage4];
 
@@ -47,8 +47,8 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
 
     this.state = {
       menuIsOpen: false,
-      image1: 1,
-      image0: 0,
+      image1: -1,
+      image0: -1,
       imageOp: 1,
     };
   }
@@ -77,18 +77,10 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
 
   componentDidMount() {
     this.setState({
-      image1: randomNum(
-        bgImageArr.length,
-        this.state.image0,
-        this.state.image1,
-      ),
+      image1: randomNum(bgImageArr.length),
     });
     this.setState({
-      image0: randomNum(
-        bgImageArr.length,
-        this.state.image0,
-        this.state.image1,
-      ),
+      image0: randomNum(bgImageArr.length, this.state.image1),
     });
     // console.log(this.state.image1, this.state.image0);
     this.interval = setInterval(this.updateHeaderBg, 9000);
@@ -121,15 +113,38 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
         <div className="grid-container">
           <div className="left-section darken" />
           <div className="darken left-line first-spacer logo-holder">
-            {/* <img class="logo" src="./img/z-logo-flat.svg"> */}
+            <img className="logo" src={logo} />>
           </div>
           <div className="left-line second-spacer" />
           <div className="menu-section darken left-line">
             <div className="menu-container">
-              <button onClick={this.openMenuClickHandler}>
-                Menu
-                {/* {this.state.menuIsOpen ? 'Close' : 'Menu'} */}
-              </button>
+              <a
+                href="#"
+                className="menu-button"
+                onClick={this.openMenuClickHandler}
+              >
+                <div
+                  className={`hamburger-container ${
+                    this.state.menuIsOpen ? 'open' : ''
+                  }`}
+                >
+                  <div className="bar1" />
+                  <div className="bar2" />
+                  <div className="bar3" />
+                </div>
+                <div
+                  style={{ opacity: this.state.menuIsOpen ? 0 : 1 }}
+                  className="menu-text"
+                >
+                  menu
+                </div>
+                <div
+                  style={{ opacity: this.state.menuIsOpen ? 1 : 0 }}
+                  className="menu-text"
+                >
+                  close
+                </div>
+              </a>
               {this.state.menuIsOpen && (
                 <Overlay closeButton={this.openMenuClickHandler} />
               )}

@@ -1,0 +1,74 @@
+BEGIN:VCALENDAR
+PRODID:-//Facebook//NONSGML Facebook Events V1.0//EN
+X-PUBLISHED-TTL:PT12H
+X-ORIGINAL-URL:https://www.facebook.com/events/1009609429211222/
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20181225T013424Z
+LAST-MODIFIED:20181225T013424Z
+CREATED:20181225T013424Z
+SEQUENCE:0
+ORGANIZER;CN=Equipe Rapide Sports Car Club\, Inc.:MAILTO:noreply@facebookmail.com
+ATTENDEE;CN=Matthew Mcilwain;PARTSTAT=ACCEPTED:https://www.facebook.com/matthew.mcilwain.9
+ATTENDEE;CN=Tony Mejia;PARTSTAT=ACCEPTED:https://www.facebook.com/tony.mejia.7355
+ATTENDEE;CN=Darren Mouillesseaux;PARTSTAT=ACCEPTED:https://www.facebook.com/darren.mouillesseaux
+ATTENDEE;CN=Mitchell Boling;PARTSTAT=ACCEPTED:https://www.facebook.com/The.Bass.TBone
+ATTENDEE;CN=Matthew Balsley;PARTSTAT=ACCEPTED:https://www.facebook.com/matthew.balsley
+ATTENDEE;CN=Mike Money;PARTSTAT=ACCEPTED:https://www.facebook.com/mike.money.9
+ATTENDEE;CN=Marty Clarke;PARTSTAT=ACCEPTED:https://www.facebook.com/martyaclarke
+ATTENDEE;CN=Mark-Sigrid Schnoerr;PARTSTAT=ACCEPTED:https://www.facebook.com/schnoerrmeister
+ATTENDEE;CN=Bob Bailey;PARTSTAT=ACCEPTED:https://www.facebook.com/bob.bailey.5473
+ATTENDEE;CN=Hailey Marie Payne;PARTSTAT=ACCEPTED:https://www.facebook.com/hailey.m.mahone
+ATTENDEE;CN=Miles Furlong;PARTSTAT=ACCEPTED:https://www.facebook.com/miles.furlong
+ATTENDEE;CN=Jim Bunch;PARTSTAT=ACCEPTED:https://www.facebook.com/watchsquid
+ATTENDEE;CN=Brian Henderson;PARTSTAT=ACCEPTED:https://www.facebook.com/fastball427
+ATTENDEE;CN=Scott Cummins;PARTSTAT=ACCEPTED:https://www.facebook.com/scott.cummins3
+ATTENDEE;CN=Blanton Payne;PARTSTAT=ACCEPTED:https://www.facebook.com/blanton.payne
+ATTENDEE;CN=Peter Alpiger;PARTSTAT=ACCEPTED:https://www.facebook.com/Traumbrecher
+ATTENDEE;CN=Brandon Slater;PARTSTAT=ACCEPTED:https://www.facebook.com/MBrandonSlater
+ATTENDEE;CN=David Powers;PARTSTAT=ACCEPTED:https://www.facebook.com/david.powers.56863
+ATTENDEE;CN=Carolle Carolle;PARTSTAT=TENTATIVE:https://www.facebook.com/carolle.liu
+ATTENDEE;CN=Styln Fam;PARTSTAT=TENTATIVE:https://www.facebook.com/stylnfamily
+ATTENDEE;CN=Clay Martin;PARTSTAT=TENTATIVE:https://www.facebook.com/clay.martin.14
+ATTENDEE;CN=Phil Osborne;PARTSTAT=TENTATIVE:https://www.facebook.com/phil.osborne.77
+ATTENDEE;CN=Daniel Bennett;PARTSTAT=TENTATIVE:https://www.facebook.com/daniel.bennett.186
+ATTENDEE;CN=Lee Locklier;PARTSTAT=TENTATIVE:https://www.facebook.com/lee.locklier
+ATTENDEE;CN=Douglas Edney;PARTSTAT=TENTATIVE:https://www.facebook.com/douglas.edney
+ATTENDEE;CN=Christy Woods;PARTSTAT=TENTATIVE:https://www.facebook.com/marychristinewoods
+ATTENDEE;CN=Richard Forsythe;PARTSTAT=TENTATIVE:https://www.facebook.com/Libertyracer
+ATTENDEE;CN=Taylor Burnidge;PARTSTAT=TENTATIVE:https://www.facebook.com/taylor.burnidge
+ATTENDEE;CN=Arturo Alarcon;PARTSTAT=TENTATIVE:https://www.facebook.com/turoalarcon
+ATTENDEE;CN=David Brewer;PARTSTAT=TENTATIVE:https://www.facebook.com/david.brewer.904
+ATTENDEE;CN=Dawn Marie Gray;PARTSTAT=TENTATIVE:https://www.facebook.com/dawnmarie007
+DTSTART:20190120T010000Z
+DTEND:20190120T030000Z
+UID:e1009609429211222@facebook.com
+SUMMARY:EquipeRapide Awards Banquet
+LOCATION:2501 Queen Margaret Dr\, Lewisville
+ \, TX 75056-5806\, United States
+URL:https://www.facebook.com/events/1009609429211222/
+DESCRIPTION:Howdy Folks\,\n\nI'm taking a break f
+ rom my long winters nap to give yo
+ u an update on the upcoming Equipe
+  Rapide banquet. It will be held o
+ n January 19th at 7:00 at Castle H
+ ills Community Center\, 2501 Queen 
+ Margaret Drive\, The Colony\, Texas 
+ 76056. You can register online for
+  $20 at AXWareORM just like you wo
+ uld for an autocross. If you have 
+ a guest then register twice or mor
+ e. We will be serving fajitas and 
+ having a good time as always. Onli
+ ne registration is open.\n\nIf you h
+ ave any questions please email equ
+ iperapide@gmail.com.\n\nhttps://www.
+ facebook.com/events/10096094292112
+ 22/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:NEEDS-ACTION
+END:VEVENT
+END:VCALENDAR

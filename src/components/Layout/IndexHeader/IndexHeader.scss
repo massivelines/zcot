@@ -1,6 +1,5 @@
 .index-header {
   height: 110vh;
-  // background-color: lightblue;
   display: flex;
   position: relative;
 
@@ -33,12 +32,93 @@
   }
 
   .logo {
-    padding-top: 200%;
+    padding-top: calc(100vh / 3);
     width: 85%;
   }
 
   .menu-section {
     width: 6.2%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .menu-container {
+      position: absolute;
+      z-index: 2000;
+
+      .menu-button {
+        .hamburger-container {
+          margin-top: 100%;
+          width: 30px;
+          height: 20px;
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+
+          .bar1,
+          .bar2,
+          .bar3 {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            // margin: 6px 0;
+            transition-property: transform;
+          }
+
+          .bar1 {
+            top: 0%;
+            transform: rotate(0deg);
+            transition: top $menuSpeed $menuSpeed ease,
+              transform $menuSpeed 0.12s ease;
+          }
+          .bar2 {
+            top: 50%;
+            opacity: 1;
+            transition: opacity $menuSpeed 0.12s ease;
+          }
+          .bar3 {
+            top: 100%;
+            transform: rotate(0deg);
+            transition: top $menuSpeed $menuSpeed ease,
+              transform $menuSpeed 0.12s ease;
+          }
+
+          &.open .bar1 {
+            top: 50%;
+            transform: rotate(45deg);
+            transition: transform $menuSpeed $menuSpeed ease,
+              top $menuSpeed 0.12s ease;
+          }
+
+          &.open .bar2 {
+            top: 50%;
+            opacity: 0;
+          }
+
+          &.open .bar3 {
+            top: 50%;
+            transform: rotate(-45deg);
+            transition: transform $menuSpeed $menuSpeed ease,
+              top $menuSpeed 0.12s ease;
+          }
+        }
+
+        .menu-text {
+          width: 100%;
+          color: $white;
+          font-size: 1.25rem;
+          font-family: $franklin;
+          font-weight: 700;
+          text-transform: uppercase;
+          position: absolute;
+          transform: translateX(0%) translateY(100%) rotate(90deg);
+          transition: opacity $menuSpeed ease;
+        }
+      }
+    }
   }
 
   .background-image {
@@ -50,8 +130,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    // background-color: lightgreen;
-    z-index: -2;
   }
 
   .new-background-image {
@@ -63,8 +141,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    // background-color: lightpink;
-    z-index: -1;
   }
 
   .grid-container {
@@ -72,18 +148,5 @@
     height: 100%;
     display: flex;
     position: relative;
-    z-index: 0;
   }
-}
-
-.overlay {
-  overflow: hidden;
-  position: fixed;
-  // position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: lightgreen;
-  top: 0;
-  left: 0;
-  // overflow-y: scroll;
 }
