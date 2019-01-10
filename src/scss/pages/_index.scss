@@ -1,8 +1,104 @@
+// Key to all same hight is the height: 100%
+
+/* Index Page */
+
+/* Index About Section */
+
+.index-about {
+  position: relative;
+  text-align: center;
+
+  .stat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .number {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $franklin;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $darkgray;
+  }
+
+  .img {
+    display: flex;
+    height: 100%;
+    svg {
+      height: 100%;
+      width: 100%;
+      fill: $darkgray;
+    }
+  }
+  .text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $franklin;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $darkgray;
+  }
+}
+
 .index-membership.section-container {
   .content {
     flex-wrap: wrap;
     .square {
       width: 33.33%;
+      .square-content {
+        // padding: 30px;
+      }
+
+      .mem-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: 1px $darkgray solid;
+      }
+
+      .backdrop {
+        content: '';
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        // transform: scale(1.1);
+        // overflow: hidden;
+        // .knockout-text-container {
+        //   opacity: 0.9;
+        // }
+      }
+      .knockout {
+        width: 90%;
+        height: 90%;
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $franklin;
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 3px solid #f1f1f1;
+        // background: rgb(255, 255, 255);
+        // mix-blend-mode: lighten;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }

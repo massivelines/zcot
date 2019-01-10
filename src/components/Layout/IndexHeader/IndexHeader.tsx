@@ -145,9 +145,10 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
                   close
                 </div>
               </a>
-              {this.state.menuIsOpen && (
+              <Overlay open={this.state.menuIsOpen} />
+              {/* {this.state.menuIsOpen && (
                 <Overlay closeButton={this.openMenuClickHandler} />
-              )}
+              )} */}
             </div>
           </div>
         </div>

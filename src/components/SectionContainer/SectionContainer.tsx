@@ -17,10 +17,15 @@ const SectionContainer: React.SFC<SectionContainerProps> = ({
   addClassName,
 }) => (
   <section className={`section-container ${addClassName}`}>
-    <div className="title">{title}</div>
+    <hr className="top-hr" />
+    <div className="title-container">
+      <div className="title">{title}</div>
+    </div>
     <div className="content">{children}</div>
-    <div className="link">
-      <Link to={linkAddress}>{linkTitle}</Link>
+    <div className="link-container">
+      <div className="link">
+        <Link to={linkAddress}>{linkTitle}</Link>
+      </div>
     </div>
   </section>
 );

@@ -1,15 +1,16 @@
 .index-header {
+  width: 100%;
   height: 110vh;
   display: flex;
   position: relative;
 
   .darken {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .left-section {
-    width: 6.2%;
+    width: $section-end-width-lg;
   }
 
   .first-spacer {
@@ -21,7 +22,7 @@
   }
 
   .left-line {
-    border-left: solid black 1px;
+    border-left: solid $darkgray 1px;
   }
 
   .logo-holder {
@@ -37,7 +38,7 @@
   }
 
   .menu-section {
-    width: 6.2%;
+    width: $section-end-width-lg;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -115,7 +116,7 @@
           text-transform: uppercase;
           position: absolute;
           transform: translateX(0%) translateY(100%) rotate(90deg);
-          transition: opacity $menuSpeed ease;
+          transition: opacity ($menuSpeed * 2) ease;
         }
       }
     }

@@ -7,24 +7,32 @@ import {
   clearAllBodyScrollLocks,
 } from 'body-scroll-lock';
 
-interface OverlayProps {}
+interface OverlayProps {
+  open: boolean;
+}
 
 class Overlay extends Component<OverlayProps> {
   targetElement = null;
 
-  componentDidMount() {
-    disableBodyScroll(document.body, {
-      reserveScrollBarGap: true,
-    });
-  }
+  // componentDidMount() {
+  //   disableBodyScroll(document.body, {
+  //     reserveScrollBarGap: true,
+  //   });
+  // }
 
-  componentWillUnmount() {
-    enableBodyScroll(document.body);
-  }
+  // componentWillUnmount() {
+  //   enableBodyScroll(document.body);
+  // }
 
   render() {
     return ReactDOM.createPortal(
-      <div className="overlay">
+      <div
+        style={{
+          opacity: this.props.open ? 1 : 0,
+          visibility: this.props.open ? 'visible' : 'hidden',
+        }}
+        className="overlay"
+      >
         <div className="spacer" />
         <nav className="links-list">
           <ul>

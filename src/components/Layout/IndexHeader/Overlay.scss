@@ -12,6 +12,7 @@
   // todo check scroll lock for account for scroll bar
   overflow-y: scroll;
   z-index: 1;
+  transition: opacity $menuSpeed ease-in-out, visibility $menuSpeed ease-in-out;
 
   nav {
     font-family: $franklin;
@@ -55,6 +56,6 @@
   }
 
   .spacer {
-    width: $section-width-lg;
+    width: $section-end-width-lg;
   }
 }
