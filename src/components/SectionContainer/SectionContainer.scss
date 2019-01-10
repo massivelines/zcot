@@ -1,11 +1,8 @@
 .section-container {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+  height: 300%;
   margin-top: $layout-spacing * 2;
   position: relative;
-  flex-wrap: wrap;
 
   &:last-of-type {
     margin-bottom: $layout-spacing * 2;
@@ -20,51 +17,61 @@
     background-color: $darkgray;
   }
 
-  .title-container {
-    width: $section-end-width-lg;
-    position: relative;
-    border-right: solid 1px $darkgray;
-
-    .title {
-      font-family: $franklin;
-      font-size: 1.875rem;
-      font-weight: 700;
-      white-space: nowrap;
-      color: $blue;
-      transform: rotate(-90deg);
-      transform-origin: right center;
-      position: absolute;
-      top: 0;
-      right: 50%;
-    }
-  }
-
-  .content {
+  .section-layout {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
     display: flex;
-    flex: 1 1 auto;
-  }
-
-  .link-container {
-    border-left: solid 1px $darkgray;
-    width: $section-end-width-lg;
     position: relative;
-    .link {
-      margin-bottom: 1.25rem;
-      font-family: $franklin;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      white-space: nowrap;
-      transform: rotate(90deg);
-      transform-origin: right center;
-      position: absolute;
-      bottom: 0;
-      right: 50%;
 
-      a:link,
-      a:visited {
+    .title-container {
+      min-width: $section-end-width-lg;
+      position: relative;
+      border-right: solid 1px $darkgray;
+
+      .title {
+        font-family: $franklin;
+        font-size: 1.875rem;
+        font-weight: 700;
+        white-space: nowrap;
         color: $blue;
-        text-decoration: none;
+        transform: rotate(-90deg);
+        transform-origin: right center;
+        position: absolute;
+        top: 0;
+        right: 50%;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex: 1 1 auto;
+      position: relative;
+    }
+
+    .link-container {
+      border-left: solid 1px $darkgray;
+      min-width: $section-end-width-lg;
+      position: relative;
+
+      .link {
+        margin-bottom: 1.25rem;
+        font-family: $franklin;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transform: rotate(90deg);
+        transform-origin: right center;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+
+        a:link,
+        a:visited {
+          color: $blue;
+          text-decoration: none;
+        }
       }
     }
   }

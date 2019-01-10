@@ -11,7 +11,8 @@ interface LayoutProps {
 
 const Layout: React.SFC<LayoutProps> = ({ children, indexPage, pageTitle }) => (
   <div className="layout">
-    {indexPage ? <IndexHeader /> : <PageHeader pageTitle={pageTitle} />}
+    {/* {indexPage ? <IndexHeader /> : <PageHeader pageTitle={pageTitle} />} */}
+    <IndexHeader indexPage={indexPage} pageTitle={pageTitle} />
     {children}
     <Footer />
   </div>

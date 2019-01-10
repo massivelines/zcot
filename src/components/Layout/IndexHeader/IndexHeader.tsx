@@ -11,6 +11,7 @@ import bgImage3 from '../../../images/headerBg/3.jpg';
 import bgImage4 from '../../../images/headerBg/4.jpg';
 
 import logo from '../../../images/z-logo-flat.svg';
+import PageHeader from '../PageHeader/index';
 
 const bgImageArr = [bgImage1, bgImage2, bgImage3, bgImage4];
 
@@ -29,7 +30,10 @@ const randomNum = (
   return holdNumber;
 };
 
-interface IndexHeaderProps {}
+interface IndexHeaderProps {
+  indexPage?: boolean;
+  pageTitle: string;
+}
 interface IndexHeaderState {
   menuIsOpen: boolean;
   image0: any;
@@ -82,8 +86,10 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
     this.setState({
       image0: randomNum(bgImageArr.length, this.state.image1),
     });
-    // console.log(this.state.image1, this.state.image0);
-    this.interval = setInterval(this.updateHeaderBg, 9000);
+
+    if (this.props.indexPage) {
+      this.interval = setInterval(this.updateHeaderBg, 6000);
+    }
   }
 
   componentWillUnmount() {
@@ -97,7 +103,8 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
 
   render() {
     return (
-      <div className="index-header">
+      // when not the index page set class 'page' to control height and page title
+      <div className={`index-header ${!this.props.indexPage && 'page'}`}>
         <div
           className="background-image"
           style={{ backgroundImage: `url(${bgImageArr[this.state.image1]})` }}
@@ -113,9 +120,14 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
         <div className="grid-container">
           <div className="left-section darken" />
           <div className="darken left-line first-spacer logo-holder">
-            <img className="logo" src={logo} />>
+            <img className="logo" src={logo} />
           </div>
-          <div className="left-line second-spacer" />
+          <div className="left-line second-spacer">
+            {/* if it is a page render pageTitle */}
+            {!this.props.indexPage && (
+              <div className="page-title">{this.props.pageTitle}</div>
+            )}
+          </div>
           <div className="menu-section darken left-line">
             <div className="menu-container">
               <a
@@ -146,9 +158,6 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
                 </div>
               </a>
               <Overlay open={this.state.menuIsOpen} />
-              {/* {this.state.menuIsOpen && (
-                <Overlay closeButton={this.openMenuClickHandler} />
-              )} */}
             </div>
           </div>
         </div>

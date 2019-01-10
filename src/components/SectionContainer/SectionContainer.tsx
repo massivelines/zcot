@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 
 interface SectionContainerProps {
   title: string;
-  linkTitle: string;
-  linkAddress: string;
+  linkTitle?: string;
+  linkAddress?: string;
   children: ReactNode;
   addClassName?: string;
 }
@@ -18,13 +18,17 @@ const SectionContainer: React.SFC<SectionContainerProps> = ({
 }) => (
   <section className={`section-container ${addClassName}`}>
     <hr className="top-hr" />
-    <div className="title-container">
-      <div className="title">{title}</div>
-    </div>
-    <div className="content">{children}</div>
-    <div className="link-container">
-      <div className="link">
-        <Link to={linkAddress}>{linkTitle}</Link>
+    <div className="section-layout">
+      <div className="title-container">
+        <div className="title">{title}</div>
+      </div>
+      <div className="content">{children}</div>
+      <div className="link-container">
+        <div className="link">
+          {linkTitle && (
+            <Link to={linkAddress ? linkAddress : '/'}>{linkTitle}</Link>
+          )}
+        </div>
       </div>
     </div>
   </section>
