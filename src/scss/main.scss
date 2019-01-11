@@ -4,7 +4,9 @@
 @import './_mixins';
 
 @import './pages/index';
-@import './pages/_about';
+@import './pages/about';
+@import './pages/sponsors';
+@import './pages/forsale';
 
 @import '../components/Layout/Layout';
 @import '../components/Layout/IndexHeader/IndexHeader';

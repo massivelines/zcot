@@ -1,12 +1,13 @@
 // Key to all same hight is the height: 100%
 
-/* Index Page */
-
-/* Index About Section */
-
 .index-about {
   position: relative;
   text-align: center;
+
+  // todo convert to variable
+  .square-content {
+    padding: 1.875rem;
+  }
 
   .stat-container {
     display: flex;
@@ -49,11 +50,11 @@
 
 .index-membership.section-container {
   .content {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .square {
       width: 33.33%;
       .square-content {
-        // padding: 30px;
+        padding: 1.875rem;
       }
 
       .mem-image {
