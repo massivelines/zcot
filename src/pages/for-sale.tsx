@@ -52,14 +52,22 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
                       </div>
                     </div>
                     <div className="price">{node.frontmatter.price}</div>
-                    <div className="location">{node.frontmatter.location}</div>
                     <div
                       className="description"
                       dangerouslySetInnerHTML={{ __html: node.html }}
                     />
                     <div className="name">{node.frontmatter.name}</div>
-                    <div className="phone">{node.frontmatter.phone}</div>
-                    <div className="email">{node.frontmatter.email}</div>
+                    <div className="location">{node.frontmatter.location}</div>
+                    <div className="phone">
+                      <a href={`tel:${node.frontmatter.phone}`}>
+                        {node.frontmatter.phone}
+                      </a>
+                    </div>
+                    <div className="email">
+                      <a href={`mailto:${node.frontmatter.email}`}>
+                        {node.frontmatter.email}
+                      </a>
+                    </div>
                   </div>
                   <div className="images-container">
                     {node.frontmatter.image1 && (
