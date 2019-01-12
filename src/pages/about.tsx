@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 
 const officers = [
@@ -166,7 +167,8 @@ const committeeMembers = [
 ];
 
 const About = () => (
-  <Layout pageTitle="About">
+  <Layout>
+    <Header pageTitle="About" />
     <SectionContainer
       title="About"
       linkTitle="CLUB BY-LAWS"

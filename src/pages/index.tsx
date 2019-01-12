@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import SEO from '../components/seo';
 import SectionContainer from '../components/SectionContainer';
 import Square from '../components/Square';
@@ -40,15 +41,21 @@ const AboutSquare: React.SFC<AboutSquareProps> = ({ number, svg, text }) => {
 const MemberSquare: React.SFC<MemberSquareProps> = ({ text, bgImage, id }) => {
   return (
     <div className="mem-image">
-      <div className="backdrop" style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(${bgImage})` }} />
+      <div
+        className="backdrop"
+        style={{
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(${bgImage})`,
+        }}
+      />
       <div className="knockout">{text}</div>
     </div>
   );
 };
 
 const IndexPage = () => (
-  <Layout indexPage pageTitle="Home">
+  <Layout>
     {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} /> */}
+    <Header indexPage pageTitle="Home" />
     <SectionContainer
       title="About"
       linkTitle="About The Club"
@@ -116,7 +123,6 @@ const IndexPage = () => (
         />
       </Square>
     </SectionContainer>
-
     <SectionContainer
       title="Events"
       linkTitle="More Events"
@@ -133,7 +139,6 @@ const IndexPage = () => (
         <div>Event 3</div>
       </Square>
     </SectionContainer>
-
     <SectionContainer
       title="Membership"
       linkTitle="Join"

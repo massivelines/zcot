@@ -8,12 +8,12 @@ import {
 
 import Overlay from './Overlay';
 
-import bgImage1 from '../../../images/headerBg/1.jpg';
-import bgImage2 from '../../../images/headerBg/2.jpg';
-import bgImage3 from '../../../images/headerBg/3.jpg';
-import bgImage4 from '../../../images/headerBg/4.jpg';
+import bgImage1 from '../../images/headerBg/1.jpg';
+import bgImage2 from '../../images/headerBg/2.jpg';
+import bgImage3 from '../../images/headerBg/3.jpg';
+import bgImage4 from '../../images/headerBg/4.jpg';
 
-import logo from '../../../images/z-logo-flat.svg';
+import logo from '../../images/z-logo-flat.svg';
 
 const bgImageArr = [bgImage1, bgImage2, bgImage3, bgImage4];
 
@@ -32,19 +32,19 @@ const randomNum = (
   return holdNumber;
 };
 
-interface IndexHeaderProps {
+interface HeaderProps {
   indexPage?: boolean;
   pageTitle: string;
 }
-interface IndexHeaderState {
+interface HeaderState {
   menuIsOpen: boolean;
   image0: any;
   image1: any;
   imageOp: any;
 }
 
-// const IndexHeader: React.SFC<IndexHeaderProps> = () => (
-class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
+// const Header: React.SFC<HeaderProps> = () => (
+class Header extends Component<HeaderProps, HeaderState> {
   constructor(props: any) {
     super(props);
 
@@ -175,4 +175,4 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
   }
 }
 
-export default IndexHeader;
+export default Header;

@@ -1,18 +1,15 @@
 import React, { ReactNode } from 'react';
-import IndexHeader from './IndexHeader';
-import PageHeader from './PageHeader';
+// import Header from './Header';
 import Footer from './Footer';
 
 interface LayoutProps {
-  indexPage?: boolean;
-  pageTitle: string;
   children: ReactNode;
 }
 
-const Layout: React.SFC<LayoutProps> = ({ children, indexPage, pageTitle }) => (
+const Layout: React.SFC<LayoutProps> = ({ children }) => (
   <div className="layout">
-    {/* {indexPage ? <IndexHeader /> : <PageHeader pageTitle={pageTitle} />} */}
-    <IndexHeader indexPage={indexPage} pageTitle={pageTitle} />
+    {/* {indexPage ? <Header /> : <PageHeader pageTitle={pageTitle} />} */}
+    {/* <Header indexPage={indexPage} pageTitle={pageTitle} /> */}
     {children}
     <Footer />
   </div>

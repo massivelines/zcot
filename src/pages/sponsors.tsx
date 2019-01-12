@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 import Square from '../components/Square';
 
@@ -42,7 +43,8 @@ const buildSponsors = sponsors.map((sponData) => (
 ));
 
 const Sponsors = () => (
-  <Layout pageTitle="Sponsors">
+  <Layout>
+    <Header pageTitle="Sponsors" />
     <SectionContainer title="Sponsors" addClassName="sponsors">
       {buildSponsors}
     </SectionContainer>

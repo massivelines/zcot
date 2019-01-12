@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 import Lightbox from '../components/LightBox';
 
@@ -38,7 +39,8 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
   render() {
     return (
       <>
-        <Layout pageTitle="For Sale">
+        <Layout>
+          <Header pageTitle="For Sale" />
           <SectionContainer title="For Sale" addClassName="for-sale">
             {/* TODO fix node: any */}
             {this.props.data.allMarkdownRemark.edges.map(({ node }: any) => {
