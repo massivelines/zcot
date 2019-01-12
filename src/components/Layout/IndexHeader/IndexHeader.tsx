@@ -11,7 +11,6 @@ import bgImage3 from '../../../images/headerBg/3.jpg';
 import bgImage4 from '../../../images/headerBg/4.jpg';
 
 import logo from '../../../images/z-logo-flat.svg';
-import PageHeader from '../PageHeader/index';
 
 const bgImageArr = [bgImage1, bgImage2, bgImage3, bgImage4];
 
@@ -46,7 +45,7 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
   constructor(props: any) {
     super(props);
 
-    this.openMenuClickHandler = this.openMenuClickHandler.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
     this.updateHeaderBg = this.updateHeaderBg.bind(this);
 
     this.state = {
@@ -97,7 +96,7 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
     clearInterval(this.interval);
   }
 
-  openMenuClickHandler() {
+  toggleMenu() {
     this.setState({ menuIsOpen: !this.state.menuIsOpen });
   }
 
@@ -130,11 +129,7 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
           </div>
           <div className="menu-section darken left-line">
             <div className="menu-container">
-              <a
-                href="#"
-                className="menu-button"
-                onClick={this.openMenuClickHandler}
-              >
+              <a href="#" className="menu-button" onClick={this.toggleMenu}>
                 <div
                   className={`hamburger-container ${
                     this.state.menuIsOpen ? 'open' : ''
@@ -157,7 +152,10 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
                   close
                 </div>
               </a>
-              <Overlay open={this.state.menuIsOpen} />
+              <Overlay
+                toggleMenu={this.toggleMenu}
+                open={this.state.menuIsOpen}
+              />
             </div>
           </div>
         </div>
