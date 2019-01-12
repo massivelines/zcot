@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-// import Header from './Header';
+import Transition from '../Transition';
 import Footer from './Footer';
 
 interface LayoutProps {
@@ -7,12 +7,12 @@ interface LayoutProps {
 }
 
 const Layout: React.SFC<LayoutProps> = ({ children }) => (
-  <div className="layout">
-    {/* {indexPage ? <Header /> : <PageHeader pageTitle={pageTitle} />} */}
-    {/* <Header indexPage={indexPage} pageTitle={pageTitle} /> */}
-    {children}
-    <Footer />
-  </div>
+  <Transition location={location}>
+    <div className="layout">
+      {children}
+      <Footer />
+    </div>
+  </Transition>
 );
 
 export default Layout;
