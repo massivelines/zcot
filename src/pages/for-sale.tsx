@@ -132,10 +132,7 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
                 <br />
                 To submit an ad, call 'Mad' Mike Taylor at 817-329-1641, or
                 email{' '}
-                <a href="mailto:zmadmike@airmail.net">
-                  zmadmike@airmail.net
-                  <br />
-                </a>
+                <a href="mailto:zmadmike@airmail.net">zmadmike@airmail.net</a>
               </div>
             </div>
           </SectionContainer>

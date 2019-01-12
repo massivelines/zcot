@@ -125,7 +125,7 @@ const About = () => (
     <SectionContainer
       title="About"
       linkTitle="CLUB BY-LAWS"
-      linkAddress="/#/"
+      linkAddress="/by-laws/"
       addClassName="about-about"
     >
       <p>
@@ -186,12 +186,7 @@ const About = () => (
       </div>
     </SectionContainer>
 
-    <SectionContainer
-      title="Officers"
-      linkTitle="CONTACT"
-      linkAddress="/#/"
-      addClassName="about-officers"
-    >
+    <SectionContainer title="Officers" addClassName="about-officers">
       <div className="officers-container">
         {officers.map((mdata, key) => {
           return (
@@ -215,12 +210,7 @@ const About = () => (
       </div>
     </SectionContainer>
 
-    <SectionContainer
-      title="Committees"
-      linkTitle="MEMBERSHIP"
-      linkAddress="/#/"
-      addClassName="about-committiees"
-    >
+    <SectionContainer title="Committees" addClassName="about-committiees">
       <div className="committiees-container">
         {committeeMembers.map((mdata, key) => {
           return (
