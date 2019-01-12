@@ -41,14 +41,14 @@
         font-family: $franklin;
       }
 
-      .phone {
-      }
-
-      a {
-        display: inline-block;
-        color: black;
-        text-decoration: none;
-        clear: both;
+      .phone,
+      .email {
+        a {
+          display: inline-block;
+          color: black;
+          text-decoration: none;
+          clear: both;
+        }
       }
     }
 

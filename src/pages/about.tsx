@@ -3,166 +3,118 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
+import Square from '../components/Square/';
 
 const officers = [
   {
     title: 'President',
-    name: 'Shawn Rhodes',
+    name: 'Shawn "Pinkie" Rhodes',
     email: 'president@zcluboftexas.com',
+    photo: require('../images/officers/shawn.jpg'),
   },
   {
     title: 'Vice President',
     name: 'Ruger Carstens',
     email: 'vicepresident@zcluboftexas.com',
+    photo: require('../images/officers/ruger.jpg'),
   },
   {
     title: 'Secretary',
     name: 'TBD',
     email: 'secretary@zcluboftexas.com',
+    photo: require('../images/nissan_brand_logo.jpg'),
   },
   {
     title: 'Treasurer',
     name: 'Nina Miriani',
     email: 'treasurer@zcluboftexas.com',
+    photo: require('../images/officers/nina.jpg'),
   },
 ];
 
 const committeeMembers = [
   {
     title: 'Advertising',
-    members: [
-      {
-        name: 'OPEN',
-        email: 'president@zcluboftexas.com',
-        phoneNumber: null,
-      },
-    ],
+    name: 'OPEN',
+    email: 'president@zcluboftexas.com',
+    phoneNumber: null,
   },
 
   {
     title: 'Appraisals',
-    members: [
-      {
-        name: 'Bill Reagan',
-        email: null,
-        phoneNumber: '573-216-4791',
-      },
-      {
-        name: 'Steve Ham',
-        email: null,
-        phoneNumber: '214-674-3368',
-      },
-    ],
+    name: 'Bill Reagan',
+    email: null,
+    phoneNumber: '573-216-4791',
   },
 
   {
     title: 'Boutique',
-    members: [
-      {
-        name: 'Glen Newton	',
-        email: 'zcotboutique@aol.com',
-        phoneNumber: '817-421-0139',
-      },
-    ],
+    name: 'Glen Newton	',
+    email: 'zcotboutique@aol.com',
+    phoneNumber: '817-421-0139',
   },
 
   {
     title: 'Car Shows	',
-    members: [
-      {
-        name: 'Jim Arnett	',
-        email: 'carshows@zcluboftexas.com',
-        phoneNumber: '469-534-6207',
-      },
-    ],
+    name: 'Jim Arnett	',
+    email: 'carshows@zcluboftexas.com',
+    phoneNumber: '469-534-6207',
   },
 
   {
     title: 'Christmas Party',
-    members: [
-      {
-        name: 'Pam & Steve Ruzic',
-        email: 'christmasparty@zcluboftexas.com',
-        phoneNumber: '972-530-0307',
-      },
-    ],
+    name: 'Pam & Steve Ruzic',
+    email: 'christmasparty@zcluboftexas.com',
+    phoneNumber: '972-530-0307',
   },
 
   {
     title: 'Guest Speakers',
-    members: [
-      {
-        name: 'Open',
-        email: null,
-        phoneNumber: null,
-      },
-    ],
+    name: 'Open',
+    email: null,
+    phoneNumber: null,
   },
 
   {
     title: 'Members',
-    members: [
-      {
-        name: 'Mike Taylor	',
-        email: 'membership@zcluboftexas.com',
-        phoneNumber: '817-329-1641',
-      },
-    ],
+    name: 'Mike Taylor	',
+    email: 'membership@zcluboftexas.com',
+    phoneNumber: '817-329-1641',
   },
 
   {
     title: 'Motorsports',
-    members: [
-      {
-        name: 'Renee Hayden',
-        email: 'motorsports@zcluboftexas.com',
-        phoneNumber: '972-966-0125',
-      },
-    ],
+    name: 'Renee Hayden',
+    email: 'motorsports@zcluboftexas.com',
+    phoneNumber: '972-966-0125',
   },
 
   {
-    title: 'title',
-    members: [
-      {
-        name: 'Edward Cheung',
-        email: 'techsessions@zcluboftexas.com',
-        phoneNumber: '972-442-7599',
-      },
-    ],
+    title: 'Tech Sessions',
+    name: 'Edward Cheung',
+    email: 'techsessions@zcluboftexas.com',
+    phoneNumber: '972-442-7599',
   },
 
   {
     title: 'Texas Tours',
-    members: [
-      {
-        name: 'Open',
-        email: null,
-        phoneNumber: null,
-      },
-    ],
+    name: 'Open',
+    email: null,
+    phoneNumber: null,
   },
 
   {
     title: 'Webmaster',
-    members: [
-      {
-        name: 'Lois Liconte	',
-        email: 'webmaster@zcluboftexas.org',
-        phoneNumber: '214-762-9702',
-      },
-    ],
+    name: 'Lois Liconte	',
+    email: 'webmaster@zcluboftexas.org',
+    phoneNumber: '214-762-9702',
   },
 
   {
     title: 'ZCCA Delegate	',
-    members: [
-      {
-        name: 'Mike Blanco	',
-        email: 'president@zcluboftexas.com ',
-        phoneNumber: 'null',
-      },
-    ],
+    name: 'Mike Blanco	',
+    email: 'president@zcluboftexas.com ',
+    phoneNumber: 'null',
   },
 ];
 
@@ -176,14 +128,6 @@ const About = () => (
       linkAddress="/#/"
       addClassName="about-about"
     >
-      {/* <div className="be">
-        test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-        malesuada nisi ac ex dapibus ultricies et sed velit. Aliquam erat
-      </div>
-      <div className="be">
-        test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-        malesuada nisi ac ex dapibus ultricies et sed velit. Aliquam erat
-      </div> */}
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada
         nisi ac ex dapibus ultricies et sed velit. Aliquam erat volutpat. Ut
@@ -213,26 +157,32 @@ const About = () => (
       linkAddress="/#/"
       addClassName="about-meetings"
     >
-      <div className="address-container">
-        <p>Our official club meetings on the 3rd Thursday of each month at:</p>
-        {/* TODO how to set up address */}
-        <div>
-          New New Buffet,
-          <br />
-          3822 Belt Line Road <br />
-          Addison, Texas 75001 <br />
-          (972) 243-1198
+      <div className="meetings-container">
+        <div className="address-container">
+          <div>
+            Official club meetings is on the 3rd Thursday of each month at:
+          </div>
+          {/* TODO how to set up address */}
+          <div className="address">
+            <div className="title">New New Buffet</div>
+            3822 Belt Line Road <br />
+            Addison, Texas 75001 <br />
+            (972) 243-1198
+          </div>
+          <div className="time">Meetings run from 7:30 pm to 9:00 pm</div>
         </div>
-      </div>
-      <div className="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0015169753854!2d-96.85131224382589!3d32.950849203160054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c26c3fff9da39%3A0x1ecc3a05f9ae416b!2sNew+New+Buffet!5e0!3m2!1sen!2sus!4v1529374625637"
-          width="600"
-          height="450"
-          // frameborder="0"
-          style={{ border: 0 }}
-          // allowfullscreen
-        />
+        <div className="meetings-map">
+          <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0015169753854!2d-96.85131224382589!3d32.950849203160054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c26c3fff9da39%3A0x1ecc3a05f9ae416b!2sNew+New+Buffet!5e0!3m2!1sen!2sus!4v1529374625637"
+              width="600"
+              height="450"
+              // frameborder="0"
+              style={{ border: 0 }}
+              // allowfullscreen
+            />
+          </div>
+        </div>
       </div>
     </SectionContainer>
 
@@ -240,11 +190,27 @@ const About = () => (
       title="Officers"
       linkTitle="CONTACT"
       linkAddress="/#/"
-      addClassName="about-meetings"
+      addClassName="about-officers"
     >
-      <div>
+      <div className="officers-container">
         {officers.map((mdata, key) => {
-          return <div key={key}>{mdata.name}</div>;
+          return (
+            <div key={key} className="officer">
+              <Square>
+                <div
+                  className="photo"
+                  style={{
+                    backgroundImage: `url(${mdata.photo})`,
+                  }}
+                />
+              </Square>
+              <div className="title">{mdata.title}</div>
+              <div className="name">{mdata.name}</div>
+              <div className="email">
+                <a href={`mailto:${mdata.email}`}>{mdata.email}</a>
+              </div>
+            </div>
+          );
         })}
       </div>
     </SectionContainer>
@@ -253,11 +219,19 @@ const About = () => (
       title="Committees"
       linkTitle="MEMBERSHIP"
       linkAddress="/#/"
-      addClassName="about-meetings"
+      addClassName="about-committiees"
     >
-      <div>
+      <div className="committiees-container">
         {committeeMembers.map((mdata, key) => {
-          return <div key={key}>{mdata.title}</div>;
+          return (
+            <div className="chair" key={key}>
+              <div className="title">{mdata.title}</div>
+              <div className="name">{mdata.name}</div>
+              <div className="email">
+                <a href={`mailto:${mdata.email}`}>{mdata.email}</a>
+              </div>
+            </div>
+          );
         })}
       </div>
     </SectionContainer>

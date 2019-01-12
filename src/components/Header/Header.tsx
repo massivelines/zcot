@@ -105,8 +105,11 @@ class Header extends Component<HeaderProps, HeaderState> {
         disableBodyScroll(document.body, {
           reserveScrollBarGap: true,
         });
+        clearTimeout(this.scrollTimer);
       } else {
-        enableBodyScroll(document.body);
+        setTimeout(() => {
+          this.scrollTimer = enableBodyScroll(document.body);
+        }, 300);
       }
     });
   }
