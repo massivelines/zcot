@@ -53,7 +53,8 @@ const MemberSquare: React.SFC<MemberSquareProps> = ({ text, bgImage, id }) => {
 };
 
 const IndexPage = () => (
-  <Layout>
+  <>
+    {/* Layout Component injected by plugin */}
     {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} /> */}
     <Header indexPage pageTitle="Home" />
     <SectionContainer
@@ -164,7 +165,7 @@ const IndexPage = () => (
         <MemberSquare id="discounts" text="Tech Sessions" bgImage={discounts} />
       </Square>
     </SectionContainer>
-  </Layout>
+  </>
 );
 
 export default IndexPage;

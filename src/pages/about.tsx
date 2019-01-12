@@ -167,7 +167,8 @@ const committeeMembers = [
 ];
 
 const About = () => (
-  <Layout>
+  <>
+    {/* Layout Component injected by plugin */}
     <Header pageTitle="About" />
     <SectionContainer
       title="About"
@@ -260,7 +261,7 @@ const About = () => (
         })}
       </div>
     </SectionContainer>
-  </Layout>
+  </>
 );
 
 export default About;

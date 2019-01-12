@@ -43,12 +43,13 @@ const buildSponsors = sponsors.map((sponData) => (
 ));
 
 const Sponsors = () => (
-  <Layout>
+  <>
+    {/* Layout Component injected by plugin */}
     <Header pageTitle="Sponsors" />
     <SectionContainer title="Sponsors" addClassName="sponsors">
       {buildSponsors}
     </SectionContainer>
-  </Layout>
+  </>
 );
 
 export default Sponsors;

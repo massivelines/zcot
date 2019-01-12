@@ -39,7 +39,8 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
   render() {
     return (
       <>
-        <Layout>
+        <>
+          {/* Layout Component injected by plugin */}
           <Header pageTitle="For Sale" />
           <SectionContainer title="For Sale" addClassName="for-sale">
             {/* TODO fix node: any */}
@@ -138,7 +139,7 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
               </div>
             </div>
           </SectionContainer>
-        </Layout>
+        </>
         {this.state.isOpen && (
           <Lightbox
             imagesArr={this.state.imagesArr}

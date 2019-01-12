@@ -5,7 +5,8 @@ import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 
 const Membership = () => (
-  <Layout>
+  <>
+    {/* Layout Component injected by plugin */}
     <Header pageTitle="Membership" />
     <SectionContainer title="Details" addClassName="membership-details">
       <div>Membership Details</div>
@@ -14,7 +15,7 @@ const Membership = () => (
     <SectionContainer title="Form" addClassName="membership-details">
       <div>Form</div>
     </SectionContainer>
-  </Layout>
+  </>
 );
 
 export default Membership;
