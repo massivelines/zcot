@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-
-// TODO: make only one header, height controlled page or index
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from 'body-scroll-lock';
 
 import Overlay from './Overlay';
 
@@ -97,7 +100,15 @@ class IndexHeader extends Component<IndexHeaderProps, IndexHeaderState> {
   }
 
   toggleMenu() {
-    this.setState({ menuIsOpen: !this.state.menuIsOpen });
+    this.setState({ menuIsOpen: !this.state.menuIsOpen }, () => {
+      if (this.state.menuIsOpen) {
+        disableBodyScroll(document.body, {
+          reserveScrollBarGap: true,
+        });
+      } else {
+        enableBodyScroll(document.body);
+      }
+    });
   }
 
   render() {

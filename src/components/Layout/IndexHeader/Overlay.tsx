@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import ReactDOM from 'react-dom';
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks,
-} from 'body-scroll-lock';
 
 interface OverlayProps {
   open: boolean;
@@ -16,18 +11,6 @@ class Overlay extends Component<OverlayProps> {
   constructor(props: OverlayProps) {
     super(props);
   }
-
-  targetElement = null;
-
-  // componentDidMount() {
-  //   disableBodyScroll(document.body, {
-  //     reserveScrollBarGap: true,
-  //   });
-  // }
-
-  // componentWillUnmount() {
-  //   enableBodyScroll(document.body);
-  // }
 
   render() {
     return ReactDOM.createPortal(
