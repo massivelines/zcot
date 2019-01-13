@@ -10,10 +10,11 @@
     padding-bottom: 100%;
   }
 
+  // Facebook event ratio to what is shown not actual file size
   &.rect:after {
     content: '';
     display: block;
-    padding-bottom: 50%;
+    padding-bottom: 52.4%;
   }
 
   .square-content {

@@ -30,8 +30,6 @@ class Transition extends React.PureComponent {
     //Destructuring props to avoid garbage this.props... in return statement
     const { children, location }: any = this.props;
 
-    console.log(location);
-
     return (
       //Using TransitionGroup and ReactTransition which are both
       //coming from  'react-transition-group' and are required for transitions to work
