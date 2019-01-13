@@ -4,9 +4,6 @@
   "description": "Z Club of Texas Website",
   "version": "0.1.0",
   "author": "Shawn Rhodes <shawn@massivelines.com>",
-  "engines": {
-    "node": "10.3.0"
-  },
   "dependencies": {
     "@fs/gatsby-plugin-drive": "^0.0.1",
     "body-scroll-lock": "^2.6.1",
@@ -44,7 +41,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "heroku-postbuild": "gatsby build",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
