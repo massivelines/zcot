@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
 import Header from '../components/Header';
 import SEO from '../components/seo';
 import SectionContainer from '../components/SectionContainer';

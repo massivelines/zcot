@@ -166,10 +166,13 @@ class Header extends Component<HeaderProps, HeaderState> {
                   close
                 </div>
               </a>
-              <Overlay
-                toggleMenu={this.toggleMenu}
-                open={this.state.menuIsOpen}
-              />
+              {/* for building, if windows exist render Overlay */}
+              {typeof window !== `undefined` && (
+                <Overlay
+                  toggleMenu={this.toggleMenu}
+                  open={this.state.menuIsOpen}
+                />
+              )}
             </div>
           </div>
         </div>

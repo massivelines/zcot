@@ -5,30 +5,35 @@ import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 import Square from '../components/Square/';
 
+import presPic from '../images/officers/shawn.jpg';
+import vicePic from '../images/officers/ruger.jpg';
+import secPic from '../images/nissan_brand_logo.jpg';
+import trePic from '../images/officers/nina.jpg';
+
 const officers = [
   {
     title: 'President',
     name: 'Shawn "Pinkie" Rhodes',
     email: 'president@zcluboftexas.com',
-    photo: require('../images/officers/shawn.jpg'),
+    photo: presPic,
   },
   {
     title: 'Vice President',
     name: 'Ruger Carstens',
     email: 'vicepresident@zcluboftexas.com',
-    photo: require('../images/officers/ruger.jpg'),
+    photo: vicePic,
   },
   {
     title: 'Secretary',
     name: 'TBD',
     email: 'secretary@zcluboftexas.com',
-    photo: require('../images/nissan_brand_logo.jpg'),
+    photo: secPic,
   },
   {
     title: 'Treasurer',
     name: 'Nina Miriani',
     email: 'treasurer@zcluboftexas.com',
-    photo: require('../images/officers/nina.jpg'),
+    photo: trePic,
   },
 ];
 

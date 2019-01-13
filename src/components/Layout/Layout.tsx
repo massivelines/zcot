@@ -4,9 +4,10 @@ import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
+  location: any;
 }
 
-const Layout: React.SFC<LayoutProps> = ({ children }) => (
+const Layout: React.SFC<LayoutProps> = ({ children, location }) => (
   <Transition location={location}>
     <div className="layout">
       {children}

@@ -7,9 +7,16 @@ interface OverlayProps {
   toggleMenu: any;
 }
 
-class Overlay extends Component<OverlayProps> {
+interface OverlayState {}
+
+class Overlay extends Component<OverlayProps, OverlayState> {
+  private el: any;
+
   constructor(props: OverlayProps) {
     super(props);
+
+    // this.el = document.body;
+    this.el = typeof document === 'undefined' ? '' : document.body;
   }
 
   render() {
@@ -58,7 +65,7 @@ class Overlay extends Component<OverlayProps> {
         </nav>
         <div className="spacer" />
       </div>,
-      document.body,
+      this.el,
     );
   }
 }
