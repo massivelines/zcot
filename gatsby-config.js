@@ -76,29 +76,29 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-ical`,
-      options: {
-        name: `events`,
-        url: `https://calendar.google.com/calendar/ical/1mbkv206g8se0195p3ko3kbn58%40group.calendar.google.com/public/basic.ics`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-        spreadsheetId: '1ZC8jUhsFcllKp00Il2vxyDPsZe4BdtBFieBIZ_1U6CM',
-        worksheetTitle: 'Sheet1',
-        credentials: require('./client_secret.json'),
-      },
-    },
-    {
-      resolve: `@fs/gatsby-plugin-drive`,
-      options: {
-        folderId: `1XiGIK1W4CHorOVa4-XvQrWM2SnmWU_C3`,
-        keyFile: path.resolve(__dirname, 'client_secret.json'),
-        destination: path.join(__dirname, `src/content`),
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-ical`,
+    //   options: {
+    //     name: `events`,
+    //     url: `https://calendar.google.com/calendar/ical/1mbkv206g8se0195p3ko3kbn58%40group.calendar.google.com/public/basic.ics`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-google-sheets',
+    //   options: {
+    //     spreadsheetId: '1ZC8jUhsFcllKp00Il2vxyDPsZe4BdtBFieBIZ_1U6CM',
+    //     worksheetTitle: 'Sheet1',
+    //     credentials: require('./client_secret.json'),
+    //   },
+    // },
+    // {
+    //   resolve: `@fs/gatsby-plugin-drive`,
+    //   options: {
+    //     folderId: `1XiGIK1W4CHorOVa4-XvQrWM2SnmWU_C3`,
+    //     keyFile: path.resolve(__dirname, 'client_secret.json'),
+    //     destination: path.join(__dirname, `src/content`),
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
