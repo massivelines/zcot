@@ -1,4 +1,5 @@
 .layout {
+  min-height: 100%;
   position: relative;
-  margin: $layout-spacing $layout-spacing 0 $layout-spacing;
+  padding: $layout-spacing $layout-spacing 0 $layout-spacing;
 }
