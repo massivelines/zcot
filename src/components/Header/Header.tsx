@@ -143,7 +143,7 @@ class Header extends Component<HeaderProps, HeaderState> {
           </div>
           <div className="menu-section darken left-line">
             <div className="menu-container">
-              <a href="#" className="menu-button" onClick={this.toggleMenu}>
+              <a className="menu-button" onClick={this.toggleMenu}>
                 <div
                   className={`hamburger-container ${
                     this.state.menuIsOpen ? 'open' : ''

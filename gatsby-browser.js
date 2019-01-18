@@ -9,6 +9,8 @@
 import React, { Component } from 'react';
 import EventProvider from './src/components/EventProvider/EventProvider';
 
+import './src/scss/main.scss'
+
 // const transitionDelay = 500;
 
 // exports.shouldUpdateScroll = ({
@@ -27,11 +29,6 @@ import EventProvider from './src/components/EventProvider/EventProvider';
 //   return false;
 // };
 
-// class ProviderWrapper extends Component {
-//   render() {
-//     return <EventProvider>{children}</EventProvider>;
-//   }
-// }
 
 export const wrapRootElement = ({ element }) => (
   <EventProvider>{element}</EventProvider>

@@ -38,7 +38,7 @@ class Events extends Component<EventProps, EventState> {
           addClassName="events"
         >
           <div>
-            <EventConsumer>
+            {/* <EventConsumer>
               {(context) => {
                 console.log(context);
                 return (
@@ -48,7 +48,7 @@ class Events extends Component<EventProps, EventState> {
                   </>
                 );
               }}
-            </EventConsumer>
+            </EventConsumer> */}
           </div>
         </SectionContainer>
       </>

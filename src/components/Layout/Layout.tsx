@@ -7,14 +7,16 @@ interface LayoutProps {
   location: any;
 }
 
-const Layout: React.SFC<LayoutProps> = ({ children, location }) => (
-  <Transition location={location}>
+const Layout: React.SFC<LayoutProps> = ({ children, location }) => {
+  return (
+    // <Transition location={location}>
     <div className="layout">
       {children}
       <Footer />
     </div>
-  </Transition>
-);
+    // </Transition>
+  );
+};
 
 export default Layout;
 
