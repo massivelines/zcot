@@ -11,6 +11,9 @@ import EventProvider from './src/components/EventProvider/EventProvider';
 
 import './src/scss/main.scss'
 
+export const wrapRootElement = ({ element }) => (
+  <EventProvider>{element}</EventProvider>
+)
 // const transitionDelay = 500;
 
 // exports.shouldUpdateScroll = ({
@@ -30,6 +33,4 @@ import './src/scss/main.scss'
 // };
 
 
-export const wrapRootElement = ({ element }) => (
-  <EventProvider>{element}</EventProvider>
-)
+
