@@ -4,6 +4,7 @@ interface EventProviderProps {}
 interface EventProviderState {
   loading: boolean;
   events: any[];
+  featured: number;
 }
 
 const EventContext = React.createContext<EventProviderProps | null>(null);
@@ -20,6 +21,7 @@ export class EventProvider extends Component<
     this.state = {
       loading: true,
       events: [],
+      featured: 0,
     };
   }
 
@@ -31,7 +33,19 @@ export class EventProvider extends Component<
         return res.json();
       })
       .then((data) => {
-        this.setState({ events: data, loading: false });
+        let countFeatured = 0;
+
+        data.forEach((eventData: any) => {
+          if (eventData.featured == true) {
+            console.log(eventData);
+            countFeatured += 1;
+          }
+        });
+        this.setState({
+          events: data,
+          loading: false,
+          featured: countFeatured,
+        });
       });
     // .then(
     //   (result) => {

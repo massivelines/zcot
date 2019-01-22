@@ -48,6 +48,7 @@ class Events extends Component<EventProps, EventState> {
               }
             }}
           </EventConsumer>
+          <div>Link to google calendar</div>
         </SectionContainer>
       </>
     );

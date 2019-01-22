@@ -21,6 +21,8 @@ const sponsorImg = {
   zcardepot,
 };
 
+// todo: grubs jumps in size
+
 const buildSponsors = sponsors.map((sponData) => (
   <div className="sponsor-container" key={sponData.company}>
     <Square addClassName="rect">

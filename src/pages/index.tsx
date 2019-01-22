@@ -5,6 +5,9 @@ import Header from '../components/Header';
 import SEO from '../components/seo';
 import SectionContainer from '../components/SectionContainer';
 import Square from '../components/Square';
+import Event from '../components/Event';
+
+import { EventConsumer } from '../components/EventProvider/EventProvider';
 
 import '../scss/main.scss';
 
@@ -129,15 +132,22 @@ const IndexPage = () => (
       linkAddress="/events/"
       addClassName="index-events"
     >
-      <Square>
-        <div>Event 1</div>
-      </Square>
-      <Square>
-        <div>Event 2</div>
-      </Square>
-      <Square>
-        <div>Event 3</div>
-      </Square>
+      <EventConsumer>
+        {(context) => {
+          return context.events.reduce(
+            (acc, eventData, currentIndex, orginalData) => {
+              if (acc.length < 3 - context.featured) {
+                acc.push(<Event data={eventData} key={eventData.title} />);
+              } else if (eventData.featured) {
+                acc.push(<Event data={eventData} key={eventData.title} />);
+              }
+
+              return acc;
+            },
+            [],
+          );
+        }}
+      </EventConsumer>
     </SectionContainer>
     <SectionContainer
       title="Membership"

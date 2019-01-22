@@ -2,7 +2,6 @@ import React from 'react';
 import Square from '../Square';
 
 const Event = ({ data }) => {
-  console.log(data);
   return (
     <div className="event-container">
       <div className="event-image-container">

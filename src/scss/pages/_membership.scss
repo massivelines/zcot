@@ -1,0 +1,180 @@
+form {
+  width: 100%;
+  margin: 0 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .form-section {
+    padding: 1.875rem;
+    width: 100%;
+    // background-color: lightseagreen;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    border-bottom: solid 1px $darkgray;
+
+    .section-title,
+    .membership-helper {
+      width: 100%;
+    }
+    .membership-helper {
+      // text-align: center;
+      margin-bottom: 1.875rem;
+      font-style: italic;
+      font-size: 0.875rem;
+    }
+
+    &.membership-type {
+      .input-title {
+        font-size: 1.125rem;
+      }
+    }
+
+    .section-title {
+      font-family: $franklin;
+      font-size: 1.5rem;
+      // margin-bottom: 0.625rem;
+    }
+
+    &.membership-type {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+
+      .input-item-container {
+        padding: 0.625rem;
+        width: 36%;
+      }
+    }
+
+    &.other {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .input-item-container {
+        padding: 0.625rem;
+        width: 33%;
+      }
+      .textarea-label {
+        width: 200%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      textarea {
+        flex: 1 1 auto;
+        resize: none;
+      }
+    }
+
+    &.contact,
+    &.car-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .input-item-container {
+        padding: 0.625rem;
+        width: 28%;
+
+        label,
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    &.submit-button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    // .input-item-container {
+    //   padding: 0.625rem;
+    //   width: 33%;
+
+    //   label {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     width: 100%;
+    //     height: 100%;
+
+    //     // input {
+    //     //   width: 100%;
+    //     // }
+    //   }
+    // }
+
+    .input-title {
+      display: block;
+      padding-bottom: 0.3125rem;
+      width: 100%;
+    }
+
+    .radio-title,
+    .checkbox-title {
+      margin-left: 0.625rem;
+    }
+
+    .checkbox-container {
+      label {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// form {
+//   width: 100%;
+//   margin: 0 1.875rem;
+
+//   .form-section {
+//     // margin-bottom: 1.875rem;
+//     padding: 1.875rem;
+//     width: 100%;
+//     border-bottom: solid 1px $darkgray;
+//     // background-color: lightseagreen;
+
+//     .input-item-container {
+//       width: 100%;
+//       break-inside: avoid-column;
+//     }
+
+//     .input-title {
+//       display: block;
+//       width: 100%;
+//     }
+
+//     .section-title,
+//     .membership-helper {
+//       width: 100%;
+//       column-span: all;
+//     }
+
+//     .section-title {
+//       font-family: $franklin;
+//       font-size: 1.5rem;
+//     }
+//   }
+
+//   .contact,
+//   .car-details {
+//     column-count: 3;
+//     column-fill: balance;
+//   }
+
+//   .membership-type,
+//   .other {
+//     column-count: 2;
+//     column-fill: balance;
+//   }
+
+//   .checkbox-container {
+//     label {
+//       width: 100%;
+//     }
+//   }
+// }
