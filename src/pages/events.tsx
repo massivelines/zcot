@@ -38,13 +38,16 @@ class Events extends Component<EventProps, EventState> {
         >
           <EventConsumer>
             {(context) => {
-              console.log(context);
-              if (!context.loading) {
-                return context.events.map((eventData) => (
-                  <Event data={eventData} key={eventData.title} />
-                ));
+              if (context != null) {
+                if (!context.loading) {
+                  return context.events.map((eventData) => (
+                    <Event data={eventData} key={eventData.title} />
+                  ));
+                } else {
+                  return <div>Loading</div>;
+                }
               } else {
-                return <div>Loading</div>;
+                return null;
               }
             }}
           </EventConsumer>

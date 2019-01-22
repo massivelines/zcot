@@ -1,6 +1,10 @@
 import React, { Component, ReactNode } from 'react';
 
-interface EventProviderProps {}
+interface EventProviderProps {
+  loading: boolean;
+  events: any[];
+  featured: number;
+}
 interface EventProviderState {
   loading: boolean;
   events: any[];

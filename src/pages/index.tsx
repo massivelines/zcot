@@ -134,18 +134,22 @@ const IndexPage = () => (
     >
       <EventConsumer>
         {(context) => {
-          return context.events.reduce(
-            (acc, eventData, currentIndex, orginalData) => {
-              if (acc.length < 3 - context.featured) {
-                acc.push(<Event data={eventData} key={eventData.title} />);
-              } else if (eventData.featured) {
-                acc.push(<Event data={eventData} key={eventData.title} />);
-              }
+          if (context != null) {
+            return context.events.reduce(
+              (acc, eventData, currentIndex, orginalData) => {
+                if (acc.length < 3 - context.featured) {
+                  acc.push(<Event data={eventData} key={eventData.title} />);
+                } else if (eventData.featured) {
+                  acc.push(<Event data={eventData} key={eventData.title} />);
+                }
 
-              return acc;
-            },
-            [],
-          );
+                return acc;
+              },
+              [],
+            );
+          } else {
+            return null;
+          }
         }}
       </EventConsumer>
     </SectionContainer>
