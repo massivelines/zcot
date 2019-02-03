@@ -93,6 +93,7 @@
 
     .chair {
       padding: 0.9375rem 1.875rem;
+      break-inside: avoid-column;
 
       .title {
         font-family: $franklin;

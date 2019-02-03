@@ -54,15 +54,22 @@ const committeeMembers = [
 
   {
     title: 'Boutique',
-    name: 'Glen Newton	',
+    name: 'Glen Newton',
     email: 'zcotboutique@aol.com',
     phoneNumber: '817-421-0139',
   },
 
   {
-    title: 'Car Shows	',
-    name: 'Jim Arnett	',
+    title: 'Car Shows',
+    name: 'Jim Arnett',
     email: 'carshows@zcluboftexas.com',
+    phoneNumber: '469-534-6207',
+  },
+
+  {
+    title: 'Community Service',
+    name: 'Katy Taylor',
+    email: 'communityservice@zcluboftexas.com',
     phoneNumber: '469-534-6207',
   },
 
