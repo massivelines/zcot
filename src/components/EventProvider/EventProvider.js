@@ -1,25 +1,11 @@
 import React, { Component, ReactNode } from 'react';
 
-interface EventProviderProps {
-  loading: boolean;
-  events: any[];
-  featured: number;
-}
-interface EventProviderState {
-  loading: boolean;
-  events: any[];
-  featured: number;
-}
-
-const EventContext = React.createContext<EventProviderProps | null>(null);
+const EventContext = React.createContext();
 
 export const EventConsumer = EventContext.Consumer;
 
-export class EventProvider extends Component<
-  EventProviderProps,
-  EventProviderState
-> {
-  constructor(props: any) {
+export class EventProvider extends Component {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -39,7 +25,7 @@ export class EventProvider extends Component<
       .then((data) => {
         let countFeatured = 0;
 
-        data.forEach((eventData: any) => {
+        data.forEach((eventData) => {
           if (eventData.featured == true) {
             console.log(eventData);
             countFeatured += 1;

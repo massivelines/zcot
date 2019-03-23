@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/Layout/Layout.tsx`)
-      }
+        component: require.resolve(`./src/components/Layout/Layout.js`),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

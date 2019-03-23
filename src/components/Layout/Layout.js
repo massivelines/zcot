@@ -2,12 +2,7 @@ import React, { ReactNode } from 'react';
 import Transition from '../Transition';
 import Footer from './Footer';
 
-interface LayoutProps {
-  children: ReactNode;
-  location: any;
-}
-
-const Layout: React.SFC<LayoutProps> = ({ children, location }) => {
+const Layout = ({ children, location }) => {
   return (
     // <Transition location={location}>
     <div className="layout">

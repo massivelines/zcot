@@ -18,19 +18,7 @@ import cruises from '../images/indexPage/cruises.jpg';
 import track from '../images/indexPage/track.jpg';
 import discounts from '../images/indexPage/discounts.jpg';
 
-interface AboutSquareProps {
-  number: number;
-  svg: ReactNode;
-  text: string;
-}
-
-interface MemberSquareProps {
-  text: string;
-  bgImage: string;
-  id: string;
-}
-
-const AboutSquare: React.SFC<AboutSquareProps> = ({ number, svg, text }) => {
+const AboutSquare = ({ number, svg, text }) => {
   return (
     <div className="stat-container">
       <div className="number">{number}</div>
@@ -40,7 +28,7 @@ const AboutSquare: React.SFC<AboutSquareProps> = ({ number, svg, text }) => {
   );
 };
 
-const MemberSquare: React.SFC<MemberSquareProps> = ({ text, bgImage, id }) => {
+const MemberSquare = ({ text, bgImage, id }) => {
   return (
     <div className="mem-image">
       <div

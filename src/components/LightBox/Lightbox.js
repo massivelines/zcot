@@ -2,17 +2,8 @@ import React, { Component } from 'react';
 import { default as ReactLightbox } from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-interface LightboxProps {
-  imagesArr: any;
-  imageNumber: number;
-  toggleLightbox: any;
-}
-interface LightboxState {
-  imageNumber: number;
-}
-
-class Lightbox extends Component<LightboxProps, LightboxState> {
-  constructor(props: any) {
+class Lightbox extends Component {
+  constructor(props) {
     super(props);
 
     this.state = {

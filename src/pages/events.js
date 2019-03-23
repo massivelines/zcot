@@ -9,15 +9,8 @@ import { EventConsumer } from '../components/EventProvider/EventProvider';
 
 // todo: set it up so past events don't show up
 
-interface EventProps {}
-interface EventState {
-  error: any;
-  isLoaded: boolean;
-  items: any;
-}
-
-class Events extends Component<EventProps, EventState> {
-  constructor(props: any) {
+class Events extends Component {
+  constructor(props) {
     super(props);
     this.state = {
       error: null,

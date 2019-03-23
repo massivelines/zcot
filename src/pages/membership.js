@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import SectionContainer from '../components/SectionContainer';
+import Layout from '../components/Layout/index';
+import Header from '../components/Header/index';
+import SectionContainer from '../components/SectionContainer/index';
 
 import { EventConsumer } from '../components/EventProvider/EventProvider';
 
@@ -246,13 +246,8 @@ const InputType = ({ inputData }) => {
   return <div className="input-item-container">{buildInput}</div>;
 };
 
-interface MembershipProps {}
-interface MembershipState {
-  addCar: boolean;
-}
-
-class Membership extends Component<MembershipProps, MembershipState> {
-  constructor(props: any) {
+class Membership extends Component {
+  constructor(props) {
     super(props);
 
     this.state = {

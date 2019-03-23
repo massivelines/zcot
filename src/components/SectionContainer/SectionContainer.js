@@ -1,15 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Link } from 'gatsby';
 
-interface SectionContainerProps {
-  title: string;
-  linkTitle?: string;
-  linkAddress?: string;
-  children: ReactNode;
-  addClassName?: string;
-}
-
-const SectionContainer: React.SFC<SectionContainerProps> = ({
+const SectionContainer = ({
   children,
   title,
   linkAddress,

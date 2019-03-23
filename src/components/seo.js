@@ -3,15 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-interface SEOProps {
-  description?: any;
-  meta?: any;
-  keywords?: any;
-  title: any;
-}
-
-class SEO extends Component<SEOProps> {
-  constructor(props: SEOProps) {
+class SEO extends Component {
+  constructor(props) {
     super(props);
   }
 

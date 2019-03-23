@@ -28,7 +28,7 @@ const getTransitionStyles = {
 class Transition extends React.PureComponent {
   render() {
     //Destructuring props to avoid garbage this.props... in return statement
-    const { children, location }: any = this.props;
+    const { children, location } = this.props;
 
     return (
       //Using TransitionGroup and ReactTransition which are both

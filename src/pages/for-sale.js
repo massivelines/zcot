@@ -7,18 +7,9 @@ import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 import Lightbox from '../components/LightBox';
 
-interface ForSaleProps {
-  data: any;
-}
-interface ForSaleState {
-  isOpen: boolean;
-  imagesArr: any;
-  imageNumber: number;
-}
-
-class ForSale extends Component<ForSaleProps, ForSaleState> {
+class ForSale extends Component {
   // todo fix props: any
-  constructor(props: any) {
+  constructor(props) {
     super(props);
 
     this.toggleLightbox = this.toggleLightbox.bind(this);
@@ -30,7 +21,7 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
     };
   }
 
-  toggleLightbox(imagesArr: any, imageNumber: any) {
+  toggleLightbox(imagesArr, imageNumber) {
     this.setState({ isOpen: !this.state.isOpen });
     this.setState({ imagesArr: imagesArr });
     this.setState({ imageNumber: imageNumber });
@@ -44,7 +35,7 @@ class ForSale extends Component<ForSaleProps, ForSaleState> {
           <Header pageTitle="For Sale" />
           <SectionContainer title="For Sale" addClassName="for-sale">
             {/* TODO fix node: any */}
-            {this.props.data.allMarkdownRemark.edges.map(({ node }: any) => {
+            {this.props.data.allMarkdownRemark.edges.map(({ node }) => {
               return (
                 <div className="for-sale-post" key={node.frontmatter.name}>
                   <div className="text-container">

@@ -2,17 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import ReactDOM from 'react-dom';
 
-interface OverlayProps {
-  open: boolean;
-  toggleMenu: any;
-}
-
-interface OverlayState {}
-
-class Overlay extends Component<OverlayProps, OverlayState> {
-  private el: any;
-
-  constructor(props: OverlayProps) {
+class Overlay extends Component {
+  constructor(props) {
     super(props);
 
     // this.el = document.body;

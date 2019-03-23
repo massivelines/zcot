@@ -18,11 +18,7 @@ import logo from '../../images/z-logo-flat.svg';
 const bgImageArr = [bgImage1, bgImage2, bgImage3, bgImage4];
 
 // returns a random number for the header background different from the previous 2
-const randomNum = (
-  length: number,
-  notEqual1?: number,
-  notEqual0?: number,
-): number => {
+const randomNum = (length, notEqual1, notEqual0) => {
   let holdNumber = Math.floor(Math.random() * length);
   if (holdNumber == notEqual0 || holdNumber == notEqual1) {
     do {
@@ -32,20 +28,8 @@ const randomNum = (
   return holdNumber;
 };
 
-interface HeaderProps {
-  indexPage?: boolean;
-  pageTitle: string;
-}
-interface HeaderState {
-  menuIsOpen: boolean;
-  image0: any;
-  image1: any;
-  imageOp: any;
-}
-
-// const Header: React.SFC<HeaderProps> = () => (
-class Header extends Component<HeaderProps, HeaderState> {
-  constructor(props: any) {
+class Header extends Component {
+  constructor(props) {
     super(props);
 
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -65,7 +49,7 @@ class Header extends Component<HeaderProps, HeaderState> {
         image1: randomNum(
           bgImageArr.length,
           this.state.image0,
-          this.state.image1,
+          this.state.image1
         ),
       });
       this.setState({ imageOp: 0 });
@@ -74,7 +58,7 @@ class Header extends Component<HeaderProps, HeaderState> {
         image0: randomNum(
           bgImageArr.length,
           this.state.image1,
-          this.state.image0,
+          this.state.image0
         ),
       });
       this.setState({ imageOp: 1 });
